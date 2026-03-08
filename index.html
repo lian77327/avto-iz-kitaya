@@ -1833,15 +1833,15 @@ Japan Life обеспечивает техническую проверку ав
 
   function toggleMenu() {
     if (!burger || !mobileMenu) return;
-    const isOpen = burger.classList.toggle('active');
-    mobileMenu.classList.toggle('active');
+    const isOpen = burger.classList.toggle('open');
+    mobileMenu.classList.toggle('show');
     document.body.style.overflow = isOpen ? 'hidden' : '';
   }
 
   function closeMenu() {
     if (!burger || !mobileMenu) return;
-    burger.classList.remove('active');
-    mobileMenu.classList.remove('active');
+    burger.classList.remove('open');
+mobileMenu.classList.remove('show');
     document.body.style.overflow = '';
   }
 
