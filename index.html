@@ -1850,109 +1850,50 @@ Japan Life обеспечивает техническую проверку ав
     link.addEventListener('click', closeMenu);
   });
 
-  /* ────────────────────────────
-     2. СОРТИРОВКА
-     ──────────────────────────── */
-  const sortSelect = document.getElementById('sortSelect');
-  const cardsContainer = document.getElementById('cardsContainer');
+/* ────────────────────────────
+   2-3. СОРТИРОВКА + ФИЛЬТРАЦИЯ (единая функция)
+   ──────────────────────────── */
+window.applyFilters = function() {
+  if (!cardsContainer) return;
+  var sortVal = document.getElementById('sortSelect').value;
+  var filterVal = document.getElementById('filterSelect').value;
+  var cards = Array.from(cardsContainer.querySelectorAll('.card'));
 
-  function sortCards() {
-    if (!sortSelect || !cardsContainer) return;
-    const value = sortSelect.value;
-    const cards = Array.from(cardsContainer.querySelectorAll('.card'));
-
-    cards.sort(function(a, b) {
-      switch (value) {
-        case 'score':
-          return parseFloat(b.dataset.score) - parseFloat(a.dataset.score);
-        case 'reviews':
-          return parseInt(b.dataset.reviews) - parseInt(a.dataset.reviews);
-        case 'price':
-          return parseInt(a.dataset.price) - parseInt(b.dataset.price);
-        case 'speed':
-          return parseInt(a.dataset.speed) - parseInt(b.dataset.speed);
-        case 'year':
-          return parseInt(a.dataset.year) - parseInt(b.dataset.year);
-        default:
-          return parseFloat(b.dataset.score) - parseFloat(a.dataset.score);
-      }
-    });
-
-    cards.forEach(function(card) {
-      cardsContainer.appendChild(card);
-    });
-
-    checkNoResults();
-  }
-
-  if (sortSelect) sortSelect.addEventListener('change', sortCards);
-
-  /* ────────────────────────────
-     3. ФИЛЬТРАЦИЯ
-     ──────────────────────────── */
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const noResults = document.getElementById('noResults');
-
-  function filterCards(filterValue) {
-    if (!cardsContainer) return;
-    const cards = cardsContainer.querySelectorAll('.card');
-
-    cards.forEach(function(card) {
-      var show = false;
-
-      switch (filterValue) {
-        case 'all':
-          show = true;
-          break;
-        case 'fullcycle':
-         show = card.dataset.type === 'fullcycle';
-        break;
-        case 'logistics':
-          show = card.dataset.type === 'logistics';
-          break;
-        case 'moscow':
-          show = card.dataset.city && card.dataset.city.indexOf('moscow') !== -1;
-          break;
-        case 'vladivostok':
-          show = card.dataset.city && card.dataset.city.indexOf('vladivostok') !== -1;
-          break;
-        case 'fast':
-          show = parseInt(card.dataset.speed) <= 30;
-          break;
-        case 'top5':
-          show = parseFloat(card.dataset.yandex) >= 5.0;
-          break;
-        default:
-          show = true;
-      }
-
-      card.style.display = show ? '' : 'none';
-    });
-
-    checkNoResults();
-  }
-
-  function checkNoResults() {
-    if (!cardsContainer || !noResults) return;
-    var cards = cardsContainer.querySelectorAll('.card');
-    var visibleCount = 0;
-    cards.forEach(function(c) {
-      if (c.style.display !== 'none') visibleCount++;
-    });
-    if (visibleCount === 0) {
-      noResults.classList.add('visible');
-    } else {
-      noResults.classList.remove('visible');
+  // Фильтрация
+  cards.forEach(function(card) {
+    var show = true;
+    switch (filterVal) {
+      case 'all': show = true; break;
+      case 'fullcycle': show = card.dataset.type === 'fullcycle'; break;
+      case 'logistics': show = card.dataset.type === 'logistics'; break;
+      case 'moscow': show = (card.dataset.city || '').indexOf('moscow') !== -1; break;
+      case 'vladivostok': show = (card.dataset.city || '').indexOf('vladivostok') !== -1; break;
+      case 'fast': show = parseInt(card.dataset.speed) <= 30; break;
+      case 'top5': show = parseFloat(card.dataset.yandex) >= 5.0; break;
+      default: show = true;
     }
-  }
-
-  filterBtns.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      filterBtns.forEach(function(b) { b.classList.remove('active'); });
-      btn.classList.add('active');
-      filterCards(btn.dataset.filter);
-    });
+    card.classList.toggle('hidden', !show);
   });
+
+  // Сортировка
+  var visible = cards.filter(function(c) { return !c.classList.contains('hidden'); });
+  visible.sort(function(a, b) {
+    switch (sortVal) {
+      case 'reviews': return parseInt(b.dataset.reviews) - parseInt(a.dataset.reviews);
+      case 'price': return parseInt(a.dataset.price) - parseInt(b.dataset.price);
+      case 'speed': return parseInt(a.dataset.speed) - parseInt(b.dataset.speed);
+      case 'year': return parseInt(a.dataset.year) - parseInt(b.dataset.year);
+      default: return parseFloat(b.dataset.score) - parseFloat(a.dataset.score);
+    }
+  });
+  visible.forEach(function(card) { cardsContainer.appendChild(card); });
+
+  // No results
+  var noRes = document.getElementById('noResults');
+  if (noRes) {
+    noRes.classList.toggle('show', visible.length === 0);
+  }
+};
 
 /* ────────────────────────────
    4. ЛАЙКИ / ДИЗЛАЙКИ
