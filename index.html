@@ -1859,7 +1859,7 @@ Japan Life обеспечивает техническую проверку ав
   function sortCards() {
     if (!sortSelect || !cardsContainer) return;
     const value = sortSelect.value;
-    const cards = Array.from(cardsContainer.querySelectorAll('.company-card'));
+    const cards = Array.from(cardsContainer.querySelectorAll('.card'));
 
     cards.sort(function(a, b) {
       switch (value) {
@@ -1895,7 +1895,7 @@ Japan Life обеспечивает техническую проверку ав
 
   function filterCards(filterValue) {
     if (!cardsContainer) return;
-    const cards = cardsContainer.querySelectorAll('.company-card');
+    const cards = cardsContainer.querySelectorAll('.card');
 
     cards.forEach(function(card) {
       var show = false;
@@ -1904,9 +1904,9 @@ Japan Life обеспечивает техническую проверку ав
         case 'all':
           show = true;
           break;
-        case 'full':
-          show = card.dataset.type === 'full';
-          break;
+        case 'fullcycle':
+         show = card.dataset.type === 'fullcycle';
+        break;
         case 'logistics':
           show = card.dataset.type === 'logistics';
           break;
@@ -1919,7 +1919,7 @@ Japan Life обеспечивает техническую проверку ав
         case 'fast':
           show = parseInt(card.dataset.speed) <= 30;
           break;
-        case 'top-rated':
+        case 'top5':
           show = parseFloat(card.dataset.yandex) >= 5.0;
           break;
         default:
@@ -1934,7 +1934,7 @@ Japan Life обеспечивает техническую проверку ав
 
   function checkNoResults() {
     if (!cardsContainer || !noResults) return;
-    var cards = cardsContainer.querySelectorAll('.company-card');
+    var cards = cardsContainer.querySelectorAll('.card');
     var visibleCount = 0;
     cards.forEach(function(c) {
       if (c.style.display !== 'none') visibleCount++;
@@ -1954,85 +1954,42 @@ Japan Life обеспечивает техническую проверку ав
     });
   });
 
-  /* ────────────────────────────
-     4. ЛАЙКИ / ДИЗЛАЙКИ
-     ──────────────────────────── */
-  var votes = {};
+/* ────────────────────────────
+   4. ЛАЙКИ / ДИЗЛАЙКИ
+   ──────────────────────────── */
+window.vote = function(btn, type) {
+  var card = btn.closest('.card');
+  var likeBtn = card.querySelector('.like-btn');
+  var dislikeBtn = card.querySelector('.dislike-btn');
+  var likeCnt = likeBtn.querySelector('.cnt');
+  var dislikeCnt = dislikeBtn.querySelector('.cnt');
 
-  // Загружаем из localStorage
-  try {
-    var saved = localStorage.getItem('autorating_votes');
-    if (saved) votes = JSON.parse(saved);
-  } catch(e) {}
-
-  function saveVotes() {
-    try { localStorage.setItem('autorating_votes', JSON.stringify(votes)); } catch(e) {}
-  }
-
-  function initVoteButtons() {
-    var allBtns = document.querySelectorAll('.vote-btn');
-
-    allBtns.forEach(function(btn) {
-      var company = btn.dataset.company;
-      var type = btn.dataset.type;
-
-      // Восстанавливаем состояние
-      if (votes[company]) {
-        var countEl = btn.querySelector('.vote-count');
-        if (type === 'like' && votes[company].likes) {
-          countEl.textContent = votes[company].likes;
-        }
-        if (type === 'dislike' && votes[company].dislikes) {
-          countEl.textContent = votes[company].dislikes;
-        }
-        if (votes[company].userVote === type) {
-          btn.classList.add('voted');
-        }
+  if (type === 'like') {
+    if (likeBtn.classList.contains('liked')) {
+      likeBtn.classList.remove('liked');
+      likeCnt.textContent = parseInt(likeCnt.textContent) - 1;
+    } else {
+      likeBtn.classList.add('liked');
+      likeCnt.textContent = parseInt(likeCnt.textContent) + 1;
+      if (dislikeBtn.classList.contains('disliked')) {
+        dislikeBtn.classList.remove('disliked');
+        dislikeCnt.textContent = parseInt(dislikeCnt.textContent) - 1;
       }
-
-      btn.addEventListener('click', function() {
-        if (!votes[company]) {
-          votes[company] = { likes: 0, dislikes: 0, userVote: null };
-        }
-
-        var data = votes[company];
-
-        // Найти парную кнопку
-        var card = btn.closest('.company-card');
-        var likeBtn = card.querySelector('.vote-like');
-        var dislikeBtn = card.querySelector('.vote-dislike');
-        var likeCount = likeBtn.querySelector('.vote-count');
-        var dislikeCount = dislikeBtn.querySelector('.vote-count');
-
-        if (data.userVote === type) {
-          // Отмена голоса
-          if (type === 'like') { data.likes = Math.max(0, data.likes - 1); }
-          else { data.dislikes = Math.max(0, data.dislikes - 1); }
-          data.userVote = null;
-          btn.classList.remove('voted');
-        } else {
-          // Если голосовал за другое — отменяем
-          if (data.userVote === 'like') {
-            data.likes = Math.max(0, data.likes - 1);
-            likeBtn.classList.remove('voted');
-          } else if (data.userVote === 'dislike') {
-            data.dislikes = Math.max(0, data.dislikes - 1);
-            dislikeBtn.classList.remove('voted');
-          }
-
-          // Новый голос
-          if (type === 'like') { data.likes++; }
-          else { data.dislikes++; }
-          data.userVote = type;
-          btn.classList.add('voted');
-        }
-
-        likeCount.textContent = data.likes || 0;
-        dislikeCount.textContent = data.dislikes || 0;
-        saveVotes();
-      });
-    });
+    }
+  } else {
+    if (dislikeBtn.classList.contains('disliked')) {
+      dislikeBtn.classList.remove('disliked');
+      dislikeCnt.textContent = parseInt(dislikeCnt.textContent) - 1;
+    } else {
+      dislikeBtn.classList.add('disliked');
+      dislikeCnt.textContent = parseInt(dislikeCnt.textContent) + 1;
+      if (likeBtn.classList.contains('liked')) {
+        likeBtn.classList.remove('liked');
+        likeCnt.textContent = parseInt(likeCnt.textContent) - 1;
+      }
+    }
   }
+};
 
   initVoteButtons();
 
@@ -2112,7 +2069,7 @@ Japan Life обеспечивает техническую проверку ав
       });
     }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
-    document.querySelectorAll('.company-card, .step-card, .guide-item, .model-card, .faq-item').forEach(function(el) {
+    document.querySelectorAll('.card, .step-card, .guide-item, .model-card, .faq-item').forEach(function(el) {
       el.classList.add('card-animate');
       observer.observe(el);
     });
