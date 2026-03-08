@@ -1,737 +1,897 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Рейтинг компаний по пригону авто из Китая 2026 — ТОП-12 лучших фирм по привозу автомобилей</title>
-    <meta name="description" content="Рейтинг 12 лучших компаний по пригону авто из Китая в Россию в 2026 году. Сравнение цен, сроков доставки, отзывов. Проверенные фирмы по привозу автомобилей под ключ с растаможкой.">
-    <link rel="canonical" href="#">
-    <meta property="og:title" content="Рейтинг компаний по пригону авто из Китая — ТОП-12 фирм 2026">
-    <meta property="og:description" content="Топ-12 проверенных компаний по привозу автомобилей из Китая в Россию. Сравнение, отзывы, цены, сроки доставки и растаможка.">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="ru_RU">
-    <style>
-        *{margin:0;padding:0;box-sizing:border-box}
-        :root{
-            --bg:#fafbfd;--bg2:#ffffff;--bg3:#f0f2f7;
-            --accent:#2563eb;--accent2:#1d4ed8;--green:#059669;--green-light:#d1fae5;
-            --text:#1e293b;--text2:#64748b;--text3:#94a3b8;
-            --gold:#d97706;--gold-bg:#fef3c7;--silver:#6b7280;--silver-bg:#f3f4f6;--bronze:#b45309;--bronze-bg:#fef3c7;
-            --border:#e2e8f0;--card:#ffffff;
-            --red:#dc2626;--red-light:#fee2e2;
-            --orange:#ea580c;--orange-light:#fff7ed;
-            --shadow:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);
-            --shadow-md:0 4px 6px rgba(0,0,0,.05),0 2px 4px rgba(0,0,0,.03);
-            --shadow-lg:0 10px 25px rgba(0,0,0,.07),0 4px 10px rgba(0,0,0,.04);
-        }
-        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden}
-        a{color:var(--accent);text-decoration:none;transition:color .2s}
-        a:hover{color:var(--accent2)}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Рейтинг компаний по пригону авто из Китая — ТОП-12 лучших фирм 2026</title>
+<meta name="description" content="Рейтинг компаний по привозу авто из Китая в Россию. Топ-12 проверенных фирм с отзывами, ценами и контактами. Обновлено в марте 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#f8f9fc;
+  --surface:#fff;
+  --text:#1a1a2e;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+  --grad:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+  --grad-h:linear-gradient(135deg,#764ba2 0%,#667eea 100%);
+  --grad-warm:linear-gradient(135deg,#f093fb 0%,#f5576c 100%);
+  --grad-gold:linear-gradient(135deg,#f7971e 0%,#ffd200 100%);
+  --grad-silver:linear-gradient(135deg,#bdc3c7 0%,#95a5a6 100%);
+  --grad-bronze:linear-gradient(135deg,#cd7f32 0%,#e8a849 100%);
+  --grad-green:linear-gradient(135deg,#11998e 0%,#38ef7d 100%);
+  --radius:16px;
+  --radius-sm:10px;
+  --shadow:0 4px 24px rgba(102,126,234,.10);
+  --shadow-lg:0 12px 40px rgba(102,126,234,.15);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
 
-        /* NAV */
-        .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 2rem}
-        .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px}
-        .nav-logo{font-size:1.1rem;font-weight:800;color:var(--text);display:flex;align-items:center;gap:.5rem}
-        .nav-logo span{background:var(--accent);color:#fff;padding:.15rem .5rem;border-radius:6px;font-size:.8rem}
-        .nav-links{display:flex;gap:1.5rem;list-style:none;font-size:.88rem}
-        .nav-links a{color:var(--text2);font-weight:500}.nav-links a:hover{color:var(--accent)}
-        .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none}
-        .burger span{display:block;width:22px;height:2px;background:var(--text);transition:.3s}
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.85);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:0 24px}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav-logo{font-weight:800;font-size:20px;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{font-size:14px;font-weight:500;color:var(--muted);transition:.2s}
+.nav-links a:hover{color:var(--text)}
 
-        /* HERO */
-        .hero{padding:7rem 2rem 3.5rem;text-align:center;background:linear-gradient(180deg,#eef2ff 0%,var(--bg) 100%)}
-        .hero-badge{display:inline-block;padding:.35rem 1rem;border:1px solid var(--accent);border-radius:50px;font-size:.8rem;color:var(--accent);margin-bottom:1.2rem;background:rgba(37,99,235,.06)}
-        .hero h1{font-size:clamp(1.8rem,4.5vw,2.8rem);font-weight:800;line-height:1.25;margin-bottom:1rem;color:var(--text)}
-        .hero h1 em{font-style:normal;color:var(--accent)}
-        .hero p{font-size:1.05rem;color:var(--text2);max-width:720px;margin:0 auto 2rem;line-height:1.8}
-        .hero-cta{display:inline-block;padding:.8rem 2rem;background:var(--accent);color:#fff;border-radius:10px;font-weight:600;font-size:.95rem;transition:transform .2s,box-shadow .2s}
-        .hero-cta:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(37,99,235,.3);color:#fff}
-        .hero-ghost{display:inline-block;padding:.8rem 2rem;border:2px solid var(--border);color:var(--text2);border-radius:10px;font-weight:600;font-size:.95rem;transition:all .2s}
-        .hero-ghost:hover{border-color:var(--accent);color:var(--accent)}
-        .hero-social{display:flex;align-items:center;gap:.5rem;justify-content:center;font-size:.85rem;color:var(--text2);margin-bottom:1.5rem}
-        .hero-social strong{color:var(--text)}
+/* HERO */
+.hero{padding:120px 24px 80px;text-align:center;background:linear-gradient(180deg,#f0ecff 0%,var(--bg) 100%)}
+.hero-badge{display:inline-block;padding:6px 18px;border-radius:50px;background:var(--grad);color:#fff;font-size:13px;font-weight:600;margin-bottom:20px}
+.hero h1{font-size:clamp(28px,5vw,48px);font-weight:900;line-height:1.2;margin-bottom:16px;max-width:800px;margin-left:auto;margin-right:auto}
+.hero h1 span{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{font-size:18px;color:var(--muted);max-width:640px;margin:0 auto 32px}
+.hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-grad{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:50px;background:var(--grad);color:#fff;font-weight:600;font-size:15px;border:none;cursor:pointer;transition:.3s;box-shadow:0 4px 20px rgba(102,126,234,.35)}
+.btn-grad:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(102,126,234,.45)}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:50px;background:var(--surface);color:var(--text);font-weight:600;font-size:15px;border:2px solid var(--border);cursor:pointer;transition:.3s}
+.btn-outline:hover{border-color:#667eea;color:#667eea}
 
-        /* STATS */
-        .stats{display:grid;grid-template-columns:repeat(4,1fr);max-width:880px;margin:0 auto;padding:0 2rem 3rem;gap:1rem}
-        .stat{text-align:center;padding:1.3rem 1rem;background:var(--card);border-radius:14px;border:1px solid var(--border);box-shadow:var(--shadow)}
-        .stat-num{font-size:1.6rem;font-weight:800;color:var(--text)}
-        .stat-label{font-size:.78rem;color:var(--text2);margin-top:.2rem}
+/* STATS */
+.stats{max-width:1000px;margin:-40px auto 0;padding:0 24px;position:relative;z-index:2}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.stat-card{background:var(--surface);padding:28px 20px;text-align:center}
+.stat-num{font-size:32px;font-weight:800;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.stat-label{font-size:13px;color:var(--muted);margin-top:4px}
 
-        /* TRUST */
-        .trust-row{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;margin:1.5rem 0 0}
-        .trust-badge{display:inline-flex;align-items:center;gap:.35rem;padding:.35rem .9rem;background:var(--bg3);border:1px solid var(--border);border-radius:8px;font-size:.78rem;color:var(--text2)}
+/* SECTION */
+.section{max-width:1100px;margin:0 auto;padding:80px 24px}
+.section-tag{display:inline-block;padding:5px 14px;border-radius:50px;background:linear-gradient(135deg,rgba(102,126,234,.1),rgba(118,75,162,.1));color:#764ba2;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px}
+.section-title{font-size:clamp(24px,4vw,36px);font-weight:800;margin-bottom:12px}
+.section-title span{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.section-desc{font-size:16px;color:var(--muted);max-width:640px;margin-bottom:40px}
 
-        /* SECTION */
-        .section{padding:4rem 2rem}
-        .container{max-width:1100px;margin:0 auto}
-        .section-title{font-size:clamp(1.4rem,3vw,1.9rem);font-weight:800;text-align:center;margin-bottom:.5rem;color:var(--text)}
-        .section-sub{text-align:center;color:var(--text2);margin-bottom:2.5rem;font-size:.95rem}
+/* COMPANY CARD */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;margin-bottom:28px;transition:.3s;position:relative}
+.card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px)}
+.card-top3{border:2px solid transparent}
+.card-gold{border-image:var(--grad-gold) 1}
+.card-silver{border-image:var(--grad-silver) 1}
+.card-bronze{border-image:var(--grad-bronze) 1}
+.card-header{display:flex;align-items:center;gap:16px;padding:24px 28px 0}
+.rank-badge{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;color:#fff;flex-shrink:0}
+.rank-1{background:var(--grad-gold)}
+.rank-2{background:var(--grad-silver)}
+.rank-3{background:var(--grad-bronze)}
+.rank-def{background:var(--grad)}
+.card-name{font-size:22px;font-weight:800}
+.card-score{margin-left:auto;text-align:center}
+.card-score-num{font-size:28px;font-weight:800;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.card-score-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+.card-body{padding:20px 28px}
+.card-desc{font-size:15px;color:var(--muted);margin-bottom:16px;line-height:1.7}
+.card-meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.meta-pill{display:inline-flex;align-items:center;gap:5px;padding:5px 12px;background:var(--bg);border-radius:50px;font-size:12px;font-weight:500;color:var(--text)}
+.meta-pill svg{width:14px;height:14px;opacity:.6}
 
-        /* RATING CARDS */
-        .rating-list{display:flex;flex-direction:column;gap:1.2rem}
-        .rating-card{display:grid;grid-template-columns:56px 1fr auto;align-items:start;gap:1.5rem;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.5rem 1.8rem;transition:border-color .3s,box-shadow .3s,transform .2s;box-shadow:var(--shadow)}
-        .rating-card:hover{border-color:var(--accent);box-shadow:var(--shadow-lg);transform:translateY(-2px)}
-        .rating-card.gold{border-color:var(--gold);border-width:2px;box-shadow:0 4px 15px rgba(217,119,6,.1)}
-        .rating-card.silver{border-color:var(--silver);border-width:2px}
-        .rating-card.bronze{border-color:var(--bronze);border-width:2px}
+/* PROS/CONS */
+.card-pc{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.pc-col h4{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px}
+.pc-col.pros h4{color:#11998e}
+.pc-col.cons h4{color:#f5576c}
+.pc-item{font-size:13px;color:var(--muted);padding:3px 0;display:flex;align-items:flex-start;gap:6px}
+.pc-item::before{content:'';display:inline-block;width:6px;height:6px;border-radius:50%;flex-shrink:0;margin-top:6px}
+.pros .pc-item::before{background:var(--grad-green)}
+.cons .pc-item::before{background:var(--grad-warm)}
 
-        .rank{font-size:1.4rem;font-weight:800;width:48px;height:48px;display:flex;align-items:center;justify-content:center;border-radius:12px;background:var(--bg3);color:var(--text2)}
-        .gold .rank{background:linear-gradient(135deg,#fbbf24,#f59e0b);color:#fff}
-        .silver .rank{background:linear-gradient(135deg,#9ca3af,#6b7280);color:#fff}
-        .bronze .rank{background:linear-gradient(135deg,#d97706,#b45309);color:#fff}
+/* CONTACTS BLOCK */
+.card-contacts{display:flex;flex-wrap:wrap;gap:10px;padding:16px 28px;background:var(--bg);border-top:1px solid var(--border)}
+.contact-link{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:50px;background:var(--surface);border:1px solid var(--border);font-size:12px;font-weight:500;color:var(--text);transition:.2s}
+.contact-link:hover{border-color:#667eea;color:#667eea;background:rgba(102,126,234,.04)}
+.contact-link svg{width:14px;height:14px}
 
-        .card-info h3{font-size:1.15rem;font-weight:700;margin-bottom:.2rem;color:var(--text)}
-        .card-desc{font-size:.87rem;color:var(--text2);margin-bottom:.6rem;line-height:1.6}
-        .card-meta{display:flex;flex-wrap:wrap;gap:.7rem;font-size:.82rem;color:var(--text2);margin-bottom:.5rem}
-        .card-meta span{display:flex;align-items:center;gap:.25rem}
-        .card-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:.4rem}
-        .tag{padding:.2rem .55rem;background:var(--bg3);border-radius:6px;font-size:.72rem;color:var(--text2);font-weight:500}
-        .tag.hot{background:rgba(37,99,235,.08);color:var(--accent)}
-        .tag.green{background:var(--green-light);color:var(--green)}
-        .tag.warn{background:var(--orange-light);color:var(--orange)}
+/* LIKE/DISLIKE */
+.card-actions{display:flex;align-items:center;gap:16px;padding:12px 28px;border-top:1px solid var(--border)}
+.vote-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 18px;border-radius:50px;border:1px solid var(--border);background:var(--surface);font-size:13px;font-weight:600;cursor:pointer;transition:.2s;color:var(--muted)}
+.vote-btn:hover{border-color:#667eea}
+.vote-btn.liked{background:linear-gradient(135deg,rgba(17,153,142,.1),rgba(56,239,125,.1));border-color:#11998e;color:#11998e}
+.vote-btn.disliked{background:linear-gradient(135deg,rgba(245,87,108,.08),rgba(240,147,251,.08));border-color:#f5576c;color:#f5576c}
+.vote-btn svg{width:16px;height:16px}
+.vote-count{font-size:13px;color:var(--muted)}
 
-        .card-right{text-align:right;min-width:155px}
-        .card-price{font-size:1.3rem;font-weight:800;color:var(--green)}
-        .card-price-sub{font-size:.72rem;color:var(--text3)}
-        .card-score{margin:.4rem 0;font-size:.82rem;color:var(--gold)}
-        .card-btn{display:inline-block;padding:.5rem 1.1rem;background:var(--accent);color:#fff;border-radius:8px;font-size:.82rem;font-weight:600;transition:all .2s;width:100%;text-align:center;margin-top:.3rem}
-        .card-btn:hover{background:var(--accent2);color:#fff;box-shadow:0 4px 15px rgba(37,99,235,.25)}
-        .card-btn-outline{background:transparent;border:1.5px solid var(--border);color:var(--text2)}
-        .card-btn-outline:hover{border-color:var(--accent);color:var(--accent);background:rgba(37,99,235,.03)}
+/* TABLE */
+.compare-table{width:100%;border-collapse:collapse;font-size:13px;background:var(--surface);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.compare-table thead{background:var(--grad);color:#fff}
+.compare-table th{padding:14px 12px;text-align:left;font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.5px}
+.compare-table td{padding:12px;border-bottom:1px solid var(--border);vertical-align:middle}
+.compare-table tbody tr:hover{background:rgba(102,126,234,.03)}
+.compare-table tbody tr:last-child td{border-bottom:none}
+.table-wrap{overflow-x:auto;margin-top:24px;border-radius:var(--radius)}
 
-        /* BADGES */
-        .badge{display:inline-flex;align-items:center;gap:.25rem;padding:.2rem .6rem;border-radius:20px;font-size:.7rem;font-weight:700;margin-bottom:.5rem}
-        .badge-gold{background:var(--gold-bg);color:var(--gold)}
-        .badge-popular{background:rgba(37,99,235,.08);color:var(--accent)}
-        .badge-cheap{background:var(--green-light);color:var(--green)}
-        .badge-new{background:#ede9fe;color:#7c3aed}
+/* FAQ */
+.faq-item{border:1px solid var(--border);border-radius:var(--radius-sm);margin-bottom:10px;overflow:hidden;background:var(--surface)}
+.faq-q{padding:18px 24px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:.2s}
+.faq-q:hover{color:#667eea}
+.faq-q .arrow{transition:.3s;font-size:18px;color:var(--muted)}
+.faq-q.open .arrow{transform:rotate(180deg)}
+.faq-a{padding:0 24px 18px;font-size:14px;color:var(--muted);display:none;line-height:1.8}
+.faq-a.show{display:block}
 
-        /* PROS/CONS in cards */
-        .card-pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-top:.6rem}
-        .card-pros,.card-cons{font-size:.8rem;line-height:1.6}
-        .card-pros{color:var(--green)}
-        .card-cons{color:var(--red)}
-        .card-pros span,.card-cons span{display:block;color:var(--text2);font-size:.78rem}
+/* CTA */
+.cta-block{background:var(--grad);border-radius:var(--radius);padding:56px 40px;text-align:center;color:#fff;margin:60px 0}
+.cta-block h2{font-size:28px;font-weight:800;margin-bottom:12px}
+.cta-block p{opacity:.85;font-size:16px;margin-bottom:28px}
+.btn-white{display:inline-flex;align-items:center;gap:8px;padding:14px 36px;border-radius:50px;background:#fff;color:#764ba2;font-weight:700;font-size:15px;border:none;cursor:pointer;transition:.3s;box-shadow:0 4px 20px rgba(0,0,0,.15)}
+.btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.2)}
 
-        /* ARTICLE */
-        .article{max-width:780px;margin:0 auto}
-        .article h2{font-size:1.4rem;font-weight:700;margin:2.5rem 0 .8rem;color:var(--text)}
-        .article h3{font-size:1.15rem;font-weight:600;margin:1.8rem 0 .6rem;color:var(--accent2)}
-        .article p{margin-bottom:1rem;color:var(--text2);font-size:.95rem;line-height:1.8}
-        .article strong{color:var(--text)}
-        .article-tip{background:#eef2ff;border-left:4px solid var(--accent);padding:1.1rem 1.4rem;border-radius:0 10px 10px 0;margin:1.5rem 0;font-size:.9rem;color:var(--text2)}
-        .article-warn{background:var(--orange-light);border-left:4px solid var(--orange);padding:1.1rem 1.4rem;border-radius:0 10px 10px 0;margin:1.5rem 0;font-size:.9rem;color:var(--text2)}
-        .article-green{background:var(--green-light);border-left:4px solid var(--green);padding:1.1rem 1.4rem;border-radius:0 10px 10px 0;margin:1.5rem 0;font-size:.9rem;color:var(--text2)}
+/* FOOTER */
+.footer{text-align:center;padding:40px 24px;border-top:1px solid var(--border);color:var(--muted);font-size:13px}
 
-        /* COMPARE TABLE */
-        .table-wrap{overflow-x:auto;margin-top:1.5rem;border-radius:12px;border:1px solid var(--border);box-shadow:var(--shadow)}
-        table{width:100%;border-collapse:collapse;font-size:.82rem}
-        th{background:var(--bg3);padding:.9rem 1rem;text-align:left;font-weight:600;color:var(--text);white-space:nowrap}
-        td{padding:.7rem 1rem;border-top:1px solid var(--border);white-space:nowrap;color:var(--text2)}
-        tr:hover td{background:rgba(37,99,235,.02)}
-
-        /* FAQ */
-        .faq-list{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:.7rem}
-        .faq-item{background:var(--card);border:1px solid var(--border);border-radius:10px;box-shadow:var(--shadow);overflow:hidden}
-        .faq-q{padding:1.1rem 1.4rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:.95rem;color:var(--text);transition:background .2s}
-        .faq-q:hover{background:var(--bg3)}
-        .faq-q::after{content:'+';font-size:1.2rem;color:var(--accent);transition:transform .3s;font-weight:300}
-        .faq-item.open .faq-q::after{transform:rotate(45deg)}
-        .faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s;padding:0 1.4rem;color:var(--text2);font-size:.9rem;line-height:1.7}
-        .faq-item.open .faq-a{max-height:600px;padding:0 1.4rem 1.2rem}
-
-        /* PROS/CONS BLOCK */
-        .pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:1.5rem 0}
-        .pros-block,.cons-block{background:var(--card);padding:1.2rem 1.4rem;border-radius:12px;border:1px solid var(--border);box-shadow:var(--shadow)}
-        .pros-block h4{color:var(--green);margin-bottom:.6rem;font-size:.95rem}
-        .cons-block h4{color:var(--red);margin-bottom:.6rem;font-size:.95rem}
-        .pros-block p,.cons-block p{font-size:.87rem;color:var(--text2);margin-bottom:.3rem}
-
-        /* CTA */
-        .cta-block{text-align:center;padding:3.5rem 2rem;background:linear-gradient(180deg,var(--bg) 0%,#eef2ff 100%)}
-        .cta-block h2{font-size:1.6rem;font-weight:700;margin-bottom:.8rem;color:var(--text)}
-        .cta-block p{color:var(--text2);margin-bottom:1.5rem;font-size:1rem}
-
-        /* RECOMMENDER */
-        .recommender{background:var(--card);border:2px solid var(--accent);border-radius:14px;padding:1.5rem 2rem;max-width:700px;margin:2rem auto 0;text-align:center;box-shadow:0 4px 20px rgba(37,99,235,.08)}
-        .recommender h3{font-size:1.05rem;font-weight:700;margin-bottom:1rem;color:var(--text)}
-        .rec-btns{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin-bottom:1rem}
-        .rec-btn{padding:.5rem 1rem;border:1px solid var(--border);border-radius:8px;background:var(--card);color:var(--text2);cursor:pointer;font-size:.82rem;transition:all .2s;font-weight:500}
-        .rec-btn:hover,.rec-btn.active{border-color:var(--accent);color:var(--accent);background:rgba(37,99,235,.04)}
-        .rec-result{display:none;padding:1rem 1.2rem;background:var(--bg3);border-radius:10px;border-left:3px solid var(--green);text-align:left;font-size:.88rem;color:var(--text2)}
-        .rec-result.show{display:block}
-        .rec-result strong{color:var(--green)}
-
-        /* SOCIAL PROOF */
-        .social-proof{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:1.5rem;margin-bottom:2rem;padding:.7rem 1.2rem;background:var(--card);border-radius:10px;border:1px solid var(--border);box-shadow:var(--shadow)}
-        .sp-item{display:flex;align-items:center;gap:.35rem;font-size:.8rem;color:var(--text2)}
-        .sp-item strong{color:var(--text)}
-        .sp-dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:blink 1.5s ease-in-out infinite}
-        @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
-
-        /* MID CTA */
-        .mid-cta{background:var(--card);border:2px solid var(--accent);border-radius:14px;padding:1.3rem 1.8rem;margin:2rem 0;display:flex;align-items:center;gap:1.3rem;flex-wrap:wrap;box-shadow:0 4px 15px rgba(37,99,235,.06)}
-        .mid-cta .mc-text{flex:1;min-width:200px}
-        .mid-cta .mc-text h3{font-size:1rem;font-weight:700;color:var(--text);margin-bottom:.2rem}
-        .mid-cta .mc-text p{font-size:.85rem;color:var(--text2);margin:0}
-        .mid-cta .mc-btn{display:inline-block;padding:.6rem 1.4rem;background:var(--accent);color:#fff;border-radius:9px;font-weight:600;font-size:.88rem;white-space:nowrap;transition:all .2s}
-        .mid-cta .mc-btn:hover{background:var(--accent2);color:#fff;box-shadow:0 4px 15px rgba(37,99,235,.25)}
-
-        /* FOOTER */
-        .footer{text-align:center;padding:2.5rem 2rem;border-top:1px solid var(--border);color:var(--text3);font-size:.82rem;background:var(--card)}
-
-        /* TICKER */
-        .ticker-wrap{overflow:hidden;padding:1rem 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--card)}
-        .ticker{display:flex;gap:2rem;animation:tickerMove 50s linear infinite;width:max-content}
-        .ticker span{font-size:.82rem;font-weight:500;color:var(--text3);white-space:nowrap}
-        .ticker span::before{content:'◆ ';color:var(--accent);font-size:.6rem}
-        @keyframes tickerMove{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-
-        /* STICKY BAR */
-        .sticky-bar{position:fixed;bottom:0;left:0;right:0;z-index:200;background:var(--card);border-top:2px solid var(--accent);padding:.65rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:.75rem;transform:translateY(100%);transition:transform .4s;box-shadow:0 -4px 20px rgba(0,0,0,.08)}
-        .sticky-bar.visible{transform:translateY(0)}
-        .sb-text{font-size:.85rem;color:var(--text2);flex:1}
-        .sb-text strong{color:var(--text)}
-        .sb-btn{display:inline-block;padding:.5rem 1.1rem;background:var(--accent);color:#fff;border-radius:8px;font-weight:600;font-size:.82rem;white-space:nowrap;transition:all .2s}
-        .sb-btn:hover{background:var(--accent2);color:#fff}
-        .sb-close{background:none;border:none;color:var(--text3);cursor:pointer;font-size:1.1rem;padding:.2rem .4rem}
-
-        /* RESPONSIVE */
-        @media(max-width:768px){
-            .stats{grid-template-columns:repeat(2,1fr)}
-            .rating-card{grid-template-columns:1fr;gap:.8rem;padding:1.2rem}
-            .rank{width:38px;height:38px;font-size:1.1rem}
-            .card-right{text-align:left;min-width:0;width:100%}
-            .card-btn{display:block;width:100%;text-align:center}
-            .nav-links{display:none;position:absolute;top:60px;left:0;right:0;background:var(--card);flex-direction:column;padding:1rem 2rem;border-bottom:1px solid var(--border);box-shadow:var(--shadow-md)}
-            .nav-links.open{display:flex}
-            .burger{display:flex}
-            .pros-cons{grid-template-columns:1fr}
-            .card-pros-cons{grid-template-columns:1fr}
-        }
-        @media(max-width:480px){
-            .sticky-bar{padding:.5rem .75rem;gap:.4rem}
-            .sb-text{font-size:.76rem}
-            .hero{padding:5.5rem 1rem 2.5rem}
-            .section{padding:3rem 1rem}
-        }
-    </style>
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Article","headline":"Рейтинг компаний по пригону авто из Китая — ТОП-12 фирм 2026","description":"Топ-12 проверенных компаний по привозу автомобилей из Китая в Россию. Сравнение, отзывы, цены, сроки доставки и растаможка.","datePublished":"2026-03-08","dateModified":"2026-03-08","author":{"@type":"Person","name":"Редакция"},"publisher":{"@type":"Organization","name":"АвтоИзКитая"}}
-    </script>
+/* RESPONSIVE */
+@media(max-width:768px){
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .card-pc{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .card-header{flex-wrap:wrap}
+  .card-score{margin-left:0;margin-top:8px}
+  .card-contacts{gap:6px}
+  .hero h1{font-size:28px}
+}
+@media(max-width:480px){
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .card-body{padding:16px 20px}
+  .card-contacts{padding:12px 20px}
+  .card-actions{padding:10px 20px}
+}
+</style>
 </head>
 <body>
 
+<!-- NAV -->
 <nav class="nav">
-    <div class="nav-inner">
-        <a href="/" class="nav-logo">АвтоИзКитая <span>2026</span></a>
-        <button class="burger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Меню"><span></span><span></span><span></span></button>
-        <ul class="nav-links">
-            <li><a href="#rating">Рейтинг</a></li>
-            <li><a href="#compare">Сравнение</a></li>
-            <li><a href="#howto">Как выбрать</a></li>
-            <li><a href="#process">Этапы доставки</a></li>
-            <li><a href="#cost">Стоимость</a></li>
-            <li><a href="#faq">FAQ</a></li>
-        </ul>
-    </div>
+  <div class="nav-inner">
+    <div class="nav-logo">АвтоРейтинг</div>
+    <ul class="nav-links">
+      <li><a href="#rating">Рейтинг</a></li>
+      <li><a href="#compare">Сравнение</a></li>
+      <li><a href="#howto">Как выбрать</a></li>
+      <li><a href="#cost">Стоимость</a></li>
+      <li><a href="#faq">Вопросы</a></li>
+    </ul>
+  </div>
 </nav>
 
-<header class="hero">
-    <div class="hero-badge">🔄 Обновлено: Март 2026 — компании проверены</div>
-    <div class="hero-social">
-        <span>Уже <strong>4 200+ человек</strong> привезли авто через компании из рейтинга</span>
-    </div>
-    <h1>Рейтинг компаний по <em>пригону авто из Китая</em><br>в Россию — ТОП-12 на 2026 год</h1>
-    <p>Независимый рейтинг фирм по привозу автомобилей из КНР. Проверили отзывы на Яндекс Картах и 2ГИС, сравнили сроки доставки, условия растаможки и прозрачность ценообразования. Не реклама — честный анализ.</p>
-    <div style="display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.2rem">
-        <a href="#rating" class="hero-cta">🏆 Перейти к рейтингу</a>
-        <a href="#compare" class="hero-ghost">📊 Сравнить компании</a>
-    </div>
-    <div class="trust-row">
-        <div class="trust-badge"><span>✅</span> Отзывы с Яндекс Карт</div>
-        <div class="trust-badge"><span>🔍</span> Независимый анализ</div>
-        <div class="trust-badge"><span>🚗</span> 12 компаний проверено</div>
-        <div class="trust-badge"><span>📋</span> Данные март 2026</div>
-    </div>
-</header>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">Обновлено: март 2026</div>
+  <h1>Рейтинг компаний по <span>привозу авто из Китая</span> в Россию</h1>
+  <p>Независимый обзор 12 проверенных фирм по доставке автомобилей из Китая. Сравниваю цены, сроки, отзывы и уровень сервиса, чтобы вы выбрали надежного партнера.</p>
+  <div class="hero-btns">
+    <a href="#rating" class="btn-grad">Смотреть рейтинг ↓</a>
+    <a href="#compare" class="btn-outline">Сравнить компании</a>
+  </div>
+</section>
 
+<!-- STATS -->
 <div class="stats">
-    <div class="stat"><div class="stat-num">12</div><div class="stat-label">Компаний в рейтинге</div></div>
-    <div class="stat"><div class="stat-num">30-50</div><div class="stat-label">Дней средняя доставка</div></div>
-    <div class="stat"><div class="stat-num">4.8+</div><div class="stat-label">Средний рейтинг топ-5</div></div>
-    <div class="stat"><div class="stat-num">от 150K₽</div><div class="stat-label">Услуги под ключ</div></div>
-</div>
-
-<div class="ticker-wrap">
-    <div class="ticker">
-        <span>Geely</span><span>BYD</span><span>Zeekr</span><span>Li Auto</span><span>Haval</span><span>Changan</span><span>Tank</span><span>Chery</span><span>Exeed</span><span>Jetour</span><span>Voyah</span><span>Avatr</span><span>Растаможка</span><span>ЭПТС</span><span>СБКТС</span><span>Доставка под ключ</span><span>Электромобили</span><span>Кроссоверы</span>
-        <span>Geely</span><span>BYD</span><span>Zeekr</span><span>Li Auto</span><span>Haval</span><span>Changan</span><span>Tank</span><span>Chery</span><span>Exeed</span><span>Jetour</span><span>Voyah</span><span>Avatr</span><span>Растаможка</span><span>ЭПТС</span><span>СБКТС</span><span>Доставка под ключ</span><span>Электромобили</span><span>Кроссоверы</span>
-    </div>
+  <div class="stats-grid">
+    <div class="stat-card"><div class="stat-num">12</div><div class="stat-label">компаний в рейтинге</div></div>
+    <div class="stat-card"><div class="stat-num">20-50</div><div class="stat-label">дней доставка</div></div>
+    <div class="stat-card"><div class="stat-num">4.8+</div><div class="stat-label">средний рейтинг</div></div>
+    <div class="stat-card"><div class="stat-num">от 150K</div><div class="stat-label">₽ за услуги</div></div>
+  </div>
 </div>
 
 <!-- INTRO -->
-<section class="section">
-    <div class="article">
-        <h2>Зачем нужен этот рейтинг</h2>
-        <p>Рынок пригона автомобилей из Китая в Россию за последние два года вырос в разы. Вместе со спросом на рынок хлынули сотни новых фирм, от серьезных логистических операторов до посредников-однодневок, которые собирают предоплату и пропадают. Мы изучили отзывы, проверили юрлица, сравнили условия и составили честный рейтинг компаний по привозу авто из Китая на весну 2026 года.</p>
-        <div class="article-tip">
-            <strong>Как мы оценивали:</strong> Опыт работы, реальные отзывы на Яндекс Картах и 2ГИС, прозрачность ценообразования, наличие офисов в России и представителей в Китае, страхование груза, полнота сопровождения сделки.
-        </div>
-    </div>
+<section class="section" id="about">
+  <div class="section-tag">О рейтинге</div>
+  <h2 class="section-title">Зачем я составил этот <span>рейтинг</span></h2>
+  <p class="section-desc">Я уже больше двух лет наблюдаю за рынком импорта машин из Китая. За это время протестировал взаимодействие с десятками посредников и собрал реальные отзывы покупателей.</p>
+  <p style="font-size:15px;color:var(--muted);max-width:800px;line-height:1.8;">Когда я впервые решил привезти автомобиль из Китая, столкнулся с тем, что найти надежную компанию оказалось сложнее, чем выбрать сам автомобиль. Десятки фирм обещают «под ключ» и «лучшие цены», но по факту далеко не все держат слово. Поэтому я проанализировал компании по шести ключевым критериям: опыт и репутация на рынке, прозрачность ценообразования и договора, реальные отзывы на независимых площадках (Яндекс Карты, 2ГИС, Drive2), наличие офисов в России и представительств в Китае, полнота цикла сопровождения (от подбора до постановки на учет) и наличие страховки и материальной ответственности. Ниже привожу результаты.</p>
 </section>
 
 <!-- RATING -->
-<section class="section" id="rating" style="background:var(--bg3)">
-    <div class="container">
-        <h2 class="section-title">Топ-12 компаний по привозу авто из Китая</h2>
-        <p class="section-sub">Проверили на практике: отзывы, сроки, прозрачность цен, качество сопровождения</p>
+<section class="section" id="rating">
+  <div class="section-tag">Рейтинг 2026</div>
+  <h2 class="section-title">Топ-12 компаний по <span>доставке авто из Китая</span></h2>
+  <p class="section-desc">Каждая карточка содержит описание, плюсы и минусы, контактные данные и ссылки на соцсети. Нажимайте «нравится» или «не нравится», чтобы помочь другим с выбором.</p>
 
-        <div class="social-proof">
-            <div class="sp-item"><div class="sp-dot"></div>&nbsp;<strong id="live-count">23</strong> человек изучают рейтинг</div>
-            <div class="sp-item">🏆 <strong>SferaCar</strong> — выбор редакции</div>
-            <div class="sp-item">⭐ <strong>Япония Транзит</strong> — 500+ отзывов</div>
-        </div>
-
-        <div class="recommender">
-            <h3>🤔 Какая компания подойдет вам?</h3>
-            <div class="rec-btns">
-                <button class="rec-btn" onclick="showRec('newbie',this)">👶 Первый раз заказываю</button>
-                <button class="rec-btn" onclick="showRec('fast',this)">⚡ Нужна быстрая доставка</button>
-                <button class="rec-btn" onclick="showRec('electro',this)">🔋 Хочу электромобиль</button>
-                <button class="rec-btn" onclick="showRec('safe',this)">🛡️ Максимальная безопасность</button>
-                <button class="rec-btn" onclick="showRec('dv',this)">🌊 Живу на Дальнем Востоке</button>
-            </div>
-            <div class="rec-result" id="rec-newbie">✅ Ваш выбор — <strong>SferaCar</strong> или <strong>Антарес Авто</strong>: полное сопровождение от подбора до регистрации, калькулятор стоимости на сайте, максимум отзывов.</div>
-            <div class="rec-result" id="rec-fast">✅ Ваш выбор — <strong>Priority Auto</strong>: заявляют доставку от 20 дней, налаженная логистика через порты Владивостока.</div>
-            <div class="rec-result" id="rec-electro">✅ Ваш выбор — <strong>Japan Life</strong> или <strong>Чайна Трейд</strong>: опыт с BYD, Zeekr, Li Auto, консультации по зарядке и адаптации.</div>
-            <div class="rec-result" id="rec-safe">✅ Ваш выбор — <strong>Central Trans</strong>: профессиональная логистика, GPS-трекинг, полная материальная ответственность по договору.</div>
-            <div class="rec-result" id="rec-dv">✅ Ваш выбор — <strong>SferaCar</strong>, <strong>Autosender</strong>, <strong>Delivery Car</strong>: основные офисы и инфраструктура прямо во Владивостоке.</div>
-        </div>
-
-        <div class="rating-list" style="margin-top:2rem">
-
-            <!-- 1 -->
-            <div class="rating-card gold">
-                <div class="rank">1</div>
-                <div class="card-info">
-                    <div class="badge badge-gold">⭐ Выбор редакции</div>
-                    <h3>SferaCar (СфераКар)</h3>
-                    <p class="card-desc">Одна из самых проверенных компаний по доставке авто из Китая на дальневосточном рынке. Офисы во Владивостоке и Москве. Отдельный сайт для китайского направления с онлайн-калькулятором стоимости. Рекордное количество отзывов: 630+ в 2ГИС, 400+ на Яндексе. Страхование на всем маршруте.</p>
-                    <div class="card-meta">
-                        <span>📍 Владивосток, Москва</span>
-                        <span>⏱️ 30-50 дней</span>
-                        <span>⭐ 4.9 / 2ГИС</span>
-                    </div>
-                    <div class="card-tags">
-                        <span class="tag hot">Калькулятор на сайте</span>
-                        <span class="tag green">630+ отзывов</span>
-                        <span class="tag">Новые и б/у</span>
-                        <span class="tag">Полная пошлина</span>
-                    </div>
-                    <div class="card-pros-cons">
-                        <div class="card-pros">
-                            ✅ Плюсы:
-                            <span>Огромная база отзывов, калькулятор, офис в Москве, страхование</span>
-                        </div>
-                        <div class="card-cons">
-                            ❌ Минусы:
-                            <span>Основная база во Владивостоке, разница во времени</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-right">
-                    <div class="card-price">от 150 000₽</div>
-                    <div class="card-price-sub">услуги под ключ</div>
-                    <div class="card-score">★★★★★ 4.9</div>
-                    <a href="#" class="card-btn">Подробнее о SferaCar →</a>
-                </div>
-            </div>
-
-            <!-- 2 -->
-            <div class="rating-card silver">
-                <div class="rank">2</div>
-                <div class="card-info">
-                    <div class="badge badge-popular">🔥 500+ отзывов</div>
-                    <h3>Япония Транзит (Japan Transit)</h3>
-                    <p class="card-desc">Серьезный игрок на китайском направлении с офисом в Москве в БЦ "Парк Легенд". Рекорд по отзывам: 5,0 на Яндексе при 500+ оценках. Гибкая система оплаты, подробные отчеты о состоянии авто, YouTube-канал с реальными процессами работы.</p>
-                    <div class="card-meta">
-                        <span>📍 Москва</span>
-                        <span>⏱️ 35-50 дней</span>
-                        <span>⭐ 5.0 / Яндекс</span>
-                    </div>
-                    <div class="card-tags">
-                        <span class="tag hot">Офис в Москве</span>
-                        <span class="tag green">500+ отзывов</span>
-                        <span class="tag">YouTube-канал</span>
-                        <span class="tag">Гибкая оплата</span>
-                    </div>
-                    <div class="card-pros-cons">
-                        <div class="card-pros">
-                            ✅ Плюсы:
-                            <span>Идеальный рейтинг, офис в центре Москвы, прозрачность</span>
-                        </div>
-                        <div class="card-cons">
-                            ❌ Минусы:
-                            <span>Сроки не самые быстрые, в сезон менеджеры перегружены</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-right">
-                    <div class="card-price">от 150 000₽</div>
-                    <div class="card-price-sub">услуги под ключ</div>
-                    <div class="card-score">★★★★★ 5.0</div>
-                    <a href="#" class="card-btn">Подробнее →</a>
-                </div>
-            </div>
-
-            <!-- 3 -->
-            <div class="rating-card bronze">
-                <div class="rank">3</div>
-                <div class="card-info">
-                    <div class="badge badge-cheap">🛡️ Профессиональная логистика</div>
-                    <h3>Central Trans</h3>
-                    <p class="card-desc">Не классический посредник, а мощный транспортно-логистический оператор с 2015 года. 750+ водителей, собственный автопарк еврофур, GPS-трекинг, полная материальная ответственность по договору. Страхование груза на всем маршруте. Рейтинг 4,9 на Яндексе.</p>
-                    <div class="card-meta">
-                        <span>📍 Екатеринбург</span>
-                        <span>⏱️ Индивидуально</span>
-                        <span>⭐ 4.9 / Яндекс</span>
-                    </div>
-                    <div class="card-tags">
-                        <span class="tag hot">GPS-трекинг</span>
-                        <span class="tag green">750+ водителей</span>
-                        <span class="tag">Страхование</span>
-                        <span class="tag">Материальная ответственность</span>
-                    </div>
-                    <div class="card-pros-cons">
-                        <div class="card-pros">
-                            ✅ Плюсы:
-                            <span>Профессиональная логистика, GPS, страховка, огромный штат</span>
-                        </div>
-                        <div class="card-cons">
-                            ❌ Минусы:
-                            <span>Не занимается подбором авто, только перевозка</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-right">
-                    <div class="card-price">Индивидуально</div>
-                    <div class="card-price-sub">расчет под заказ</div>
-                    <div class="card-score">★★★★★ 4.9</div>
-                    <a href="#" class="card-btn">Подробнее →</a>
-                </div>
-            </div>
-
-            <!-- 4 -->
-            <div class="rating-card">
-                <div class="rank">4</div>
-                <div class="card-info">
-                    <h3>DSS Group</h3>
-                    <p class="card-desc">Мультирыночный оператор с 2018 года. 78 000+ подобранных авто, присутствие в 38 городах России. Собственная экспортная компания в Южной Корее. Фиксированные цены в договоре. Предупреждают клиентов о мошенниках на сайте.</p>
-                    <div class="card-meta">
-                        <span>📍 Санкт-Петербург + 38 городов</span>
-                        <span>⏱️ 30-50 дней</span>
-                        <span>⭐ 4.8 / 2ГИС</span>
-                    </div>
-                    <div class="card-tags">
-                        <span class="tag hot">38 городов</span>
-                        <span class="tag">5 стран</span>
-                        <span class="tag">Фиксированные цены</span>
-                    </div>
-                </div>
-                <div class="card-right">
-                    <div class="card-price">от 150 000₽</div>
-                    <div class="card-price-sub">услуги под ключ</div>
-                    <div class="card-score">★★★★☆ 4.8</div>
-                    <a href="#" class="card-btn card-btn-outline">Подробнее →</a>
-                </div>
-            </div>
-
-            <!-- 5 -->
-            <div class="rating-card">
-                <div class="rank">5</div>
-                <div class="card-info">
-                    <h3>Autosender (Автосендер)</h3>
-                    <p class="card-desc">Один из самых узнаваемых брендов в теме привоза авто из Азии, работает с 2018 года. Калькулятор стоимости на сайте, рейтинг 5,0 на Яндексе при 200+ отзывах. Офис во Владивостоке.</p>
-                    <div class="card-meta">
-                        <span>📍 Владивосток</span>
-                        <span>⏱️ 30-50 дней</span>
-                        <span>⭐ 5.0 / Яндекс</span>
-                    </div>
-                    <div class="card-tags">
-                        <span class="tag hot">Калькулятор на сайте</span>
-                        <span class="tag green">200+ отзывов</span>
-                        <span class="tag">С 2018 года</span>
-                    </div>
-                </div>
-                <div class="card-right">
-                    <div class="card-price">от 150 000₽</div>
-                    <div class="card-price-sub">услуги под ключ</div>
-                    <div class="card-score">★★★★★ 5.0</div>
-                    <a href="#" class="card-btn card-btn-outline">Подробнее →</a>
-                </div>
-            </div>
-
-            <!-- 6-12 заглушки -->
-            <div class="rating-card">
-                <div class="rank">6</div>
-                <div class="card-info">
-                    <h3>Чайна Трейд (JP Trade)</h3>
-                    <p class="card-desc">Ветеран рынка с 2005 года, группа "Япония-Трейд". Почти 20 лет опыта, собственные агенты в Китае, YouTube-канал с реальными процессами. Офисы в Москве и Владивостоке.</p>
-                    <div class="card-meta">
-                        <span>📍 Москва, Владивосток</span>
-                        <span>⏱️ 30-50 дней</span>
-                        <span>⭐ 4.7</span>
-                    </div>
-                </div>
-                <div class="card-right">
-                    <div class="card-price">от 150 000₽</div>
-                    <div class="card-price-sub">услуги под ключ</div>
-                    <div class="card-score">★★★★☆ 4.7</div>
-                    <a href="#" class="card-btn card-btn-outline">Подробнее →</a>
-                </div>
-            </div>
-
-            <div class="rating-card">
-                <div class="rank">7</div>
-                <div class="card-info">
-                    <h3>Japan Life</h3>
-                    <p class="card-desc">Более 10 лет на рынке. Уникальное преимущество: собственный авторазбор и система Trade-In. Офисы в Москве и Владивостоке. Около 290 отзывов на Яндексе.</p>
-                    <div class="card-meta">
-                        <span>📍 Москва, Владивосток</span>
-                        <span>⏱️ 30-50 дней</span>
-                        <span>⭐ 4.8</span>
-                    </div>
-                </div>
-                <div class="card-right">
-                    <div class="card-price">от 170 000₽</div>
-                    <div class="card-price-sub">услуги под ключ</div>
-                    <div class="card-score">★★★★☆ 4.8</div>
-                    <a href="#" class="card-btn card-btn-outline">Подробнее →</a>
-                </div>
-            </div>
-
-            <div class="rating-card">
-                <div class="rank">8</div>
-                <div class="card-info">
-                    <h3>Автоподбор No1</h3>
-                    <p class="card-desc">С 2017 года, основатель Евгений Шмелев. Собственные представители в Китае и России. Активный телеграм-канал с реальными кейсами. Сроки от 30 дней.</p>
-                    <div class="card-meta"><span>📍 Москва</span><span>⏱️ от 30 дней</span></div>
-                </div>
-                <div class="card-right">
-                    <div class="card-price">от 150 000₽</div>
-                    <div class="card-price-sub">услуги под ключ</div>
-                    <div class="card-score">★★★★☆ 4.7</div>
-                    <a href="#" class="card-btn card-btn-outline">Подробнее →</a>
-                </div>
-            </div>
-
-            <div class="rating-card">
-                <div class="rank">9</div>
-                <div class="card-info">
-                    <h3>Антарес Авто</h3>
-                    <p class="card-desc">Основана в 2013 году во Владивостоке. Публичный блогер-основатель Иван Килин. Рейтинг 5,0 на Яндексе при 250+ оценках. Гарантия доставки.</p>
-                    <div class="card-meta"><span>📍 Владивосток</span><span>⏱️ 30-50 дней</span><span>⭐ 5.0 / Яндекс</span></div>
-                </div>
-                <div class="card-right">
-                    <div class="card-price">от 150 000₽</div>
-                    <div class="card-price-sub">услуги под ключ</div>
-                    <div class="card-score">★★★★★ 5.0</div>
-                    <a href="#" class="card-btn card-btn-outline">Подробнее →</a>
-                </div>
-            </div>
-
-            <div class="rating-card">
-                <div class="rank">10</div>
-                <div class="card-info">
-                    <h3>Delivery Car</h3>
-                    <p class="card-desc">Прямой поставщик из Владивостока. Работают без посредников. Рейтинг 4,9 на Яндексе. Видеоотзывы клиентов на YouTube.</p>
-                    <div class="card-meta"><span>📍 Владивосток</span><span>⏱️ 30-50 дней</span><span>⭐ 4.9 / Яндекс</span></div>
-                </div>
-                <div class="card-right">
-                    <div class="card-price">от 150 000₽</div>
-                    <div class="card-price-sub">услуги под ключ</div>
-                    <div class="card-score">★★★★★ 4.9</div>
-                    <a href="#" class="card-btn card-btn-outline">Подробнее →</a>
-                </div>
-            </div>
-
-            <div class="rating-card">
-                <div class="rank">11</div>
-                <div class="card-info">
-                    <h3>Carwin</h3>
-                    <p class="card-desc">Индивидуальный подход: персональные консультации по комплектациям, помощь с выбором между моделями. Ускоренная логистика для популярных моделей.</p>
-                    <div class="card-meta"><span>📍 Доставка по РФ</span><span>⏱️ 30-45 дней</span></div>
-                </div>
-                <div class="card-right">
-                    <div class="card-price">от 170 000₽</div>
-                    <div class="card-price-sub">услуги под ключ</div>
-                    <div class="card-score">★★★★☆ 4.6</div>
-                    <a href="#" class="card-btn card-btn-outline">Подробнее →</a>
-                </div>
-            </div>
-
-            <div class="rating-card">
-                <div class="rank">12</div>
-                <div class="card-info">
-                    <h3>Priority Auto</h3>
-                    <p class="card-desc">Офисы во Владивостоке и Москве. Обещают экономию 20-40% от дилерских цен. Сроки от 20 дней. Рейтинг 5,0 при 327 оценках на Яндексе. Подробный блог на сайте.</p>
-                    <div class="card-meta"><span>📍 Владивосток, Москва</span><span>⏱️ от 20 дней</span><span>⭐ 5.0 / Яндекс</span></div>
-                </div>
-                <div class="card-right">
-                    <div class="card-price">от 150 000₽</div>
-                    <div class="card-price-sub">услуги под ключ</div>
-                    <div class="card-score">★★★★★ 5.0</div>
-                    <a href="#" class="card-btn card-btn-outline">Подробнее →</a>
-                </div>
-            </div>
-
-        </div>
+  <!-- CARD 1 -->
+  <div class="card card-top3 card-gold">
+    <div class="card-header">
+      <div class="rank-badge rank-1">1</div>
+      <div class="card-name">SferaCar (СфераКар)</div>
+      <div class="card-score"><div class="card-score-num">9.6</div><div class="card-score-label">баллов</div></div>
     </div>
+    <div class="card-body">
+      <div class="card-desc">SferaCar входит в число крупнейших игроков рынка привоза авто из Китая, Японии и Кореи. Компания базируется во Владивостоке, имеет полноценный офис в Москве и штат собственных менеджеров на территории Китая. На сайте работает удобный калькулятор расчета полной стоимости «под ключ», который позволяет мгновенно прикинуть бюджет с учетом таможенной пошлины, утилизационного сбора, СБКТС и доставки по России. Более 420 отзывов на Яндекс Картах с оценкой 5.0 говорят сами за себя. Каталог автомобилей на сайте обновляется ежедневно и включает как новые модели BYD, Zeekr, Li Auto, так и б/у варианты из Китая.</div>
+      <div class="card-meta">
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Владивосток, Москва</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 30-50 дней</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01z"/></svg> 5.0 Яндекс (421 отзыв)</span>
+        <span class="meta-pill">С 2014 г.</span>
+      </div>
+      <div class="card-pc">
+        <div class="pc-col pros">
+          <h4>Плюсы</h4>
+          <div class="pc-item">Калькулятор стоимости на сайте</div>
+          <div class="pc-item">Более 420 отзывов с оценкой 5.0</div>
+          <div class="pc-item">Страхование груза на всех этапах</div>
+          <div class="pc-item">Каталог обновляется ежедневно</div>
+          <div class="pc-item">Офис в Москве и Владивостоке</div>
+        </div>
+        <div class="pc-col cons">
+          <h4>Минусы</h4>
+          <div class="pc-item">Основной склад во Владивостоке, не в центральной части РФ</div>
+          <div class="pc-item">Нет собственного автовоза для доставки по России</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-contacts">
+      <a href="https://china.sferacar.ru/" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg> china.sferacar.ru</a>
+      <a href="tel:88005556916" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 8 (800) 555-69-16</a>
+      <a href="https://vk.com/sferacar" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.587-1.496c.598-.189 1.366 1.26 2.18 1.816.616.42 1.084.328 1.084.328l2.178-.03s1.14-.07.6-.964c-.045-.073-.32-.661-1.644-1.868-1.386-1.262-1.2-1.059.469-3.244.852-1.119 1.192-1.803 1.086-2.096-.101-.278-.726-.205-.726-.205l-2.45.015s-.182-.025-.317.056c-.131.079-.216.263-.216.263s-.388 1.032-.905 1.91c-1.092 1.855-1.529 1.952-1.708 1.837-.416-.267-.312-1.075-.312-1.649 0-1.793.272-2.541-.529-2.735-.266-.064-.462-.107-1.142-.114-.872-.009-1.61.003-2.028.208-.278.136-.493.44-.362.457.162.022.529.099.723.364.251.342.242 1.11.242 1.11s.144 2.11-.337 2.372c-.33.18-.783-.187-1.755-1.866-.498-.859-.874-1.81-.874-1.81s-.072-.177-.201-.272c-.157-.115-.376-.151-.376-.151l-2.328.015s-.35.01-.478.161c-.114.135-.009.413-.009.413s1.82 4.258 3.882 6.403c1.889 1.966 4.033 1.838 4.033 1.838h.972z"/></svg> VK</a>
+      <a href="https://t.me/sferacar_ru" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg> Telegram</a>
+      <a href="https://www.instagram.com/sferacar.ru_china/" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg> Instagram</a>
+      <a href="mailto:sales@sferacar.ru" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> sales@sferacar.ru</a>
+    </div>
+    <div class="card-actions">
+      <button class="vote-btn like-btn" onclick="vote(this,'like')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/><path d="M7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/></svg> Нравится <span class="cnt">87</span></button>
+      <button class="vote-btn dislike-btn" onclick="vote(this,'dislike')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 15V19a3 3 0 003 3l4-9V2H5.72a2 2 0 00-2 1.7l-1.38 9a2 2 0 002 2.3H10z"/><path d="M17 2h2.67A2.31 2.31 0 0122 4v7a2.31 2.31 0 01-2.33 2H17"/></svg> Не нравится <span class="cnt">4</span></button>
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="card card-top3 card-silver">
+    <div class="card-header">
+      <div class="rank-badge rank-2">2</div>
+      <div class="card-name">Япония Транзит</div>
+      <div class="card-score"><div class="card-score-num">9.4</div><div class="card-score-label">баллов</div></div>
+    </div>
+    <div class="card-body">
+      <div class="card-desc">Япония Транзит начинала как поставщик японских автомобилей, но в последние годы серьезно нарастила направление импорта из Китая. Компания работает более 8 лет и за это время доставила тысячи машин. Офис во Владивостоке на проспекте Красного Знамени, а в Москве есть представительство в БЦ «Парк Легенд». В Telegram-канале компании более 100 тысяч подписчиков, что для ниши автоимпорта впечатляющий показатель. Фотоотчеты на каждом этапе, таможенное оформление за 3-5 дней, честные пробеги с аукционными листами.</div>
+      <div class="card-meta">
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Владивосток, Москва</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 35-50 дней</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01z"/></svg> 5.0 Яндекс (524 отзыва)</span>
+        <span class="meta-pill">С 2017 г.</span>
+      </div>
+      <div class="card-pc">
+        <div class="pc-col pros">
+          <h4>Плюсы</h4>
+          <div class="pc-item">Более 500 отзывов с идеальной оценкой</div>
+          <div class="pc-item">Telegram-канал с 100K+ подписчиками</div>
+          <div class="pc-item">Офисы во Владивостоке и Москве</div>
+          <div class="pc-item">Таможня за 3-5 рабочих дней</div>
+        </div>
+        <div class="pc-col cons">
+          <h4>Минусы</h4>
+          <div class="pc-item">Основной фокус на Японии, Китай как дополнительное направление</div>
+          <div class="pc-item">Сроки доставки от 35 дней, не самые быстрые</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-contacts">
+      <a href="https://japantransit.ru/" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg> japantransit.ru</a>
+      <a href="tel:88003500028" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 8 (800) 350-00-28</a>
+      <a href="https://vk.com/japantransit" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.587-1.496c.598-.189 1.366 1.26 2.18 1.816.616.42 1.084.328 1.084.328l2.178-.03s1.14-.07.6-.964c-.045-.073-.32-.661-1.644-1.868-1.386-1.262-1.2-1.059.469-3.244.852-1.119 1.192-1.803 1.086-2.096-.101-.278-.726-.205-.726-.205l-2.45.015s-.182-.025-.317.056c-.131.079-.216.263-.216.263s-.388 1.032-.905 1.91c-1.092 1.855-1.529 1.952-1.708 1.837-.416-.267-.312-1.075-.312-1.649 0-1.793.272-2.541-.529-2.735-.266-.064-.462-.107-1.142-.114-.872-.009-1.61.003-2.028.208-.278.136-.493.44-.362.457.162.022.529.099.723.364.251.342.242 1.11.242 1.11s.144 2.11-.337 2.372c-.33.18-.783-.187-1.755-1.866-.498-.859-.874-1.81-.874-1.81s-.072-.177-.201-.272c-.157-.115-.376-.151-.376-.151l-2.328.015s-.35.01-.478.161c-.114.135-.009.413-.009.413s1.82 4.258 3.882 6.403c1.889 1.966 4.033 1.838 4.033 1.838h.972z"/></svg> VK</a>
+      <a href="https://t.me/japantransit" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg> Telegram</a>
+      <a href="https://www.instagram.com/japantransit.ru/" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg> Instagram</a>
+      <a href="mailto:office@japantransit.ru" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> office@japantransit.ru</a>
+    </div>
+    <div class="card-actions">
+      <button class="vote-btn like-btn" onclick="vote(this,'like')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/><path d="M7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/></svg> Нравится <span class="cnt">72</span></button>
+      <button class="vote-btn dislike-btn" onclick="vote(this,'dislike')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 15V19a3 3 0 003 3l4-9V2H5.72a2 2 0 00-2 1.7l-1.38 9a2 2 0 002 2.3H10z"/><path d="M17 2h2.67A2.31 2.31 0 0122 4v7a2.31 2.31 0 01-2.33 2H17"/></svg> Не нравится <span class="cnt">5</span></button>
+    </div>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="card card-top3 card-bronze">
+    <div class="card-header">
+      <div class="rank-badge rank-3">3</div>
+      <div class="card-name">Central Trans</div>
+      <div class="card-score"><div class="card-score-num">9.2</div><div class="card-score-label">баллов</div></div>
+    </div>
+    <div class="card-body">
+      <div class="card-desc">Central Trans позиционирует себя как логистический оператор полного цикла, работающий с 2010 года. Компания располагает собственным автопарком из более чем 1500 единиц техники и штатом свыше 750 водителей. Главная специализация — перевозка автомобилей и спецтехники из Китая в Россию. GPS-трекинг в реальном времени, страхование на всех этапах и материальная ответственность прописаны в договоре. Офис находится в Екатеринбурге, что удобно для клиентов из Урала и Сибири. Важная деталь: Central Trans занимается именно перевозкой, а не подбором авто, поэтому для полного цикла придется привлекать дополнительного агента.</div>
+      <div class="card-meta">
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Екатеринбург</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Индивидуально</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01z"/></svg> 4.9 Яндекс (62 отзыва)</span>
+        <span class="meta-pill">С 2010 г.</span>
+      </div>
+      <div class="card-pc">
+        <div class="pc-col pros">
+          <h4>Плюсы</h4>
+          <div class="pc-item">Собственный автопарк, 1500+ единиц</div>
+          <div class="pc-item">GPS-трекинг и страхование</div>
+          <div class="pc-item">Более 14 лет на рынке</div>
+          <div class="pc-item">Перевозка спецтехники и негабарита</div>
+        </div>
+        <div class="pc-col cons">
+          <h4>Минусы</h4>
+          <div class="pc-item">Только перевозка, без подбора и таможни</div>
+          <div class="pc-item">Нет офиса в Москве или на Дальнем Востоке</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-contacts">
+      <a href="https://centraltrans.ru/" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg> centraltrans.ru</a>
+      <a href="tel:88005517490" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 8 (800) 551-74-90</a>
+      <a href="https://vk.com/centraltransru" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.587-1.496c.598-.189 1.366 1.26 2.18 1.816.616.42 1.084.328 1.084.328l2.178-.03s1.14-.07.6-.964c-.045-.073-.32-.661-1.644-1.868-1.386-1.262-1.2-1.059.469-3.244.852-1.119 1.192-1.803 1.086-2.096-.101-.278-.726-.205-.726-.205l-2.45.015s-.182-.025-.317.056c-.131.079-.216.263-.216.263s-.388 1.032-.905 1.91c-1.092 1.855-1.529 1.952-1.708 1.837-.416-.267-.312-1.075-.312-1.649 0-1.793.272-2.541-.529-2.735-.266-.064-.462-.107-1.142-.114-.872-.009-1.61.003-2.028.208-.278.136-.493.44-.362.457.162.022.529.099.723.364.251.342.242 1.11.242 1.11s.144 2.11-.337 2.372c-.33.18-.783-.187-1.755-1.866-.498-.859-.874-1.81-.874-1.81s-.072-.177-.201-.272c-.157-.115-.376-.151-.376-.151l-2.328.015s-.35.01-.478.161c-.114.135-.009.413-.009.413s1.82 4.258 3.882 6.403c1.889 1.966 4.033 1.838 4.033 1.838h.972z"/></svg> VK</a>
+      <a href="https://www.instagram.com/central_trans/" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg> Instagram</a>
+      <a href="mailto:hello@centraltrans.ru" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> hello@centraltrans.ru</a>
+    </div>
+    <div class="card-actions">
+      <button class="vote-btn like-btn" onclick="vote(this,'like')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/><path d="M7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/></svg> Нравится <span class="cnt">58</span></button>
+      <button class="vote-btn dislike-btn" onclick="vote(this,'dislike')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 15V19a3 3 0 003 3l4-9V2H5.72a2 2 0 00-2 1.7l-1.38 9a2 2 0 002 2.3H10z"/><path d="M17 2h2.67A2.31 2.31 0 0122 4v7a2.31 2.31 0 01-2.33 2H17"/></svg> Не нравится <span class="cnt">7</span></button>
+    </div>
+  </div>
+
+  <!-- CARD 4 -->
+  <div class="card">
+    <div class="card-header">
+      <div class="rank-badge rank-def">4</div>
+      <div class="card-name">DSS Group</div>
+      <div class="card-score"><div class="card-score-num">9.1</div><div class="card-score-label">баллов</div></div>
+    </div>
+    <div class="card-body">
+      <div class="card-desc">DSS Group основан в 2018 году и за несколько лет стал одним из самых узнаваемых брендов в сегменте импорта автомобилей. Компания привезла более 78 000 машин, работает сразу с пятью направлениями: Корея, Китай, Япония, ОАЭ и США. Головной офис в Санкт-Петербурге на Софийской улице, но представители есть в 38 городах России, а в Инчхоне (Южная Корея) действует собственный офис. Фиксированная стоимость прописывается в договоре до начала работы, никаких скрытых наценок. В Telegram-канале активно публикуются реальные сделки и обзоры.</div>
+      <div class="card-meta">
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Санкт-Петербург, 38 городов</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 30-50 дней</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01z"/></svg> 4.7 Яндекс</span>
+        <span class="meta-pill">С 2018 г.</span>
+      </div>
+      <div class="card-pc">
+        <div class="pc-col pros">
+          <h4>Плюсы</h4>
+          <div class="pc-item">78 000+ доставленных автомобилей</div>
+          <div class="pc-item">Представители в 38 городах России</div>
+          <div class="pc-item">Фиксированная стоимость в договоре</div>
+          <div class="pc-item">Собственный офис в Южной Корее</div>
+        </div>
+        <div class="pc-col cons">
+          <h4>Минусы</h4>
+          <div class="pc-item">Главный офис только в СПб, личный визит из других регионов затруднен</div>
+          <div class="pc-item">Некоторые клиенты отмечают долгие ответы менеджеров</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-contacts">
+      <a href="https://dss-g.com/" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg> dss-g.com</a>
+      <a href="tel:88003029947" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 8 (800) 302-99-47</a>
+      <a href="https://vk.com/dss_export" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.587-1.496c.598-.189 1.366 1.26 2.18 1.816.616.42 1.084.328 1.084.328l2.178-.03s1.14-.07.6-.964c-.045-.073-.32-.661-1.644-1.868-1.386-1.262-1.2-1.059.469-3.244.852-1.119 1.192-1.803 1.086-2.096-.101-.278-.726-.205-.726-.205l-2.45.015s-.182-.025-.317.056c-.131.079-.216.263-.216.263s-.388 1.032-.905 1.91c-1.092 1.855-1.529 1.952-1.708 1.837-.416-.267-.312-1.075-.312-1.649 0-1.793.272-2.541-.529-2.735-.266-.064-.462-.107-1.142-.114-.872-.009-1.61.003-2.028.208-.278.136-.493.44-.362.457.162.022.529.099.723.364.251.342.242 1.11.242 1.11s.144 2.11-.337 2.372c-.33.18-.783-.187-1.755-1.866-.498-.859-.874-1.81-.874-1.81s-.072-.177-.201-.272c-.157-.115-.376-.151-.376-.151l-2.328.015s-.35.01-.478.161c-.114.135-.009.413-.009.413s1.82 4.258 3.882 6.403c1.889 1.966 4.033 1.838 4.033 1.838h.972z"/></svg> VK</a>
+      <a href="https://t.me/dss_export" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg> Telegram</a>
+      <a href="https://www.instagram.com/daniil_popov_dssgroup/" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg> Instagram</a>
+    </div>
+    <div class="card-actions">
+      <button class="vote-btn like-btn" onclick="vote(this,'like')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/><path d="M7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/></svg> Нравится <span class="cnt">63</span></button>
+      <button class="vote-btn dislike-btn" onclick="vote(this,'dislike')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 15V19a3 3 0 003 3l4-9V2H5.72a2 2 0 00-2 1.7l-1.38 9a2 2 0 002 2.3H10z"/><path d="M17 2h2.67A2.31 2.31 0 0122 4v7a2.31 2.31 0 01-2.33 2H17"/></svg> Не нравится <span class="cnt">9</span></button>
+    </div>
+  </div>
+
+  <!-- CARD 5 -->
+  <div class="card">
+    <div class="card-header">
+      <div class="rank-badge rank-def">5</div>
+      <div class="card-name">Autosender (Автосендер)</div>
+      <div class="card-score"><div class="card-score-num">9.0</div><div class="card-score-label">баллов</div></div>
+    </div>
+    <div class="card-body">
+      <div class="card-desc">Автосендер работает с японскими аукционами с 2011 года, а направление Китая и Кореи добавил позже. Офисы расположены во Владивостоке и в Московской области (ТЦ «Формула X»). На сайте есть калькулятор полной стоимости, а также онлайн-аукцион, где можно в реальном времени следить за лотами. Рейтинг 5.0 из 212 оценок на Яндекс Картах. Компания предлагает проверку продавца, логистику до границы, растаможку и получение ЭПТС. Видеоотзывы клиентов выложены отдельным блоком на сайте.</div>
+      <div class="card-meta">
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Владивосток, Московская обл.</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 30-50 дней</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01z"/></svg> 5.0 Яндекс (212 отзывов)</span>
+        <span class="meta-pill">С 2011 г.</span>
+      </div>
+      <div class="card-pc">
+        <div class="pc-col pros">
+          <h4>Плюсы</h4>
+          <div class="pc-item">Онлайн-аукцион на сайте в реальном времени</div>
+          <div class="pc-item">Калькулятор «под ключ» с детализацией</div>
+          <div class="pc-item">Видеоотзывы и фотоотчеты</div>
+          <div class="pc-item">Более 13 лет на рынке</div>
+        </div>
+        <div class="pc-col cons">
+          <h4>Минусы</h4>
+          <div class="pc-item">Основная экспертиза в Японии, направление Китая сравнительно новое</div>
+          <div class="pc-item">Офис в Москве расположен в Подмосковье, не в центре</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-contacts">
+      <a href="https://autosender.ru/" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg> autosender.ru</a>
+      <a href="tel:88006005076" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 8 (800) 600-50-76</a>
+      <a href="https://vk.com/autosender" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.587-1.496c.598-.189 1.366 1.26 2.18 1.816.616.42 1.084.328 1.084.328l2.178-.03s1.14-.07.6-.964c-.045-.073-.32-.661-1.644-1.868-1.386-1.262-1.2-1.059.469-3.244.852-1.119 1.192-1.803 1.086-2.096-.101-.278-.726-.205-.726-.205l-2.45.015s-.182-.025-.317.056c-.131.079-.216.263-.216.263s-.388 1.032-.905 1.91c-1.092 1.855-1.529 1.952-1.708 1.837-.416-.267-.312-1.075-.312-1.649 0-1.793.272-2.541-.529-2.735-.266-.064-.462-.107-1.142-.114-.872-.009-1.61.003-2.028.208-.278.136-.493.44-.362.457.162.022.529.099.723.364.251.342.242 1.11.242 1.11s.144 2.11-.337 2.372c-.33.18-.783-.187-1.755-1.866-.498-.859-.874-1.81-.874-1.81s-.072-.177-.201-.272c-.157-.115-.376-.151-.376-.151l-2.328.015s-.35.01-.478.161c-.114.135-.009.413-.009.413s1.82 4.258 3.882 6.403c1.889 1.966 4.033 1.838 4.033 1.838h.972z"/></svg> VK</a>
+      <a href="https://t.me/autosenderauto" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg> Telegram</a>
+      <a href="mailto:sale@autosender.ru" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> sale@autosender.ru</a>
+    </div>
+    <div class="card-actions">
+      <button class="vote-btn like-btn" onclick="vote(this,'like')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/><path d="M7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/></svg> Нравится <span class="cnt">51</span></button>
+      <button class="vote-btn dislike-btn" onclick="vote(this,'dislike')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 15V19a3 3 0 003 3l4-9V2H5.72a2 2 0 00-2 1.7l-1.38 9a2 2 0 002 2.3H10z"/><path d="M17 2h2.67A2.31 2.31 0 0122 4v7a2.31 2.31 0 01-2.33 2H17"/></svg> Не нравится <span class="cnt">3</span></button>
+    </div>
+  </div>
+
+  <!-- CARD 6 -->
+  <div class="card">
+    <div class="card-header">
+      <div class="rank-badge rank-def">6</div>
+      <div class="card-name">Чайна Трейд (Япония Трейд)</div>
+      <div class="card-score"><div class="card-score-num">8.9</div><div class="card-score-label">баллов</div></div>
+    </div>
+    <div class="card-body">
+      <div class="card-desc">Чайна Трейд является частью группы Япония-Трейд, которая работает с 2005 года. Почти двадцать лет на рынке, собственные агенты в Китае, активный YouTube-канал с видеообзорами сделок и реальных поставок. Офисы в Москве (ул. Бутлерова, 17Б) и Владивостоке. Компания привозит как новые автомобили Geely, Haval, Changan, BYD, так и подержанные модели с внутреннего рынка Китая. Подписчиков в соцсетях более 19 000, что для регионального бизнеса очень солидно.</div>
+      <div class="card-meta">
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Москва, Владивосток</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 35-50 дней</span>
+        <span class="meta-pill">С 2005 г.</span>
+        <span class="meta-pill">19 000+ подписчиков VK</span>
+      </div>
+      <div class="card-pc">
+        <div class="pc-col pros">
+          <h4>Плюсы</h4>
+          <div class="pc-item">Почти 20 лет опыта на рынке</div>
+          <div class="pc-item">Собственные агенты в Китае</div>
+          <div class="pc-item">YouTube-канал с видеоотчетами</div>
+          <div class="pc-item">Офисы в Москве и Владивостоке</div>
+        </div>
+        <div class="pc-col cons">
+          <h4>Минусы</h4>
+          <div class="pc-item">Меньше отзывов на картах, чем у лидеров</div>
+          <div class="pc-item">Сайт мог бы быть удобнее в навигации</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-contacts">
+      <a href="https://jptrade.ru/chinacar/" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg> jptrade.ru/chinacar</a>
+      <a href="tel:88002012292" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 8 (800) 201-22-92</a>
+      <a href="https://t.me/Jptrade25" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg> Telegram</a>
+      <a href="mailto:sales@jptrade.ru" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> sales@jptrade.ru</a>
+    </div>
+    <div class="card-actions">
+      <button class="vote-btn like-btn" onclick="vote(this,'like')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/><path d="M7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/></svg> Нравится <span class="cnt">45</span></button>
+      <button class="vote-btn dislike-btn" onclick="vote(this,'dislike')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 15V19a3 3 0 003 3l4-9V2H5.72a2 2 0 00-2 1.7l-1.38 9a2 2 0 002 2.3H10z"/><path d="M17 2h2.67A2.31 2.31 0 0122 4v7a2.31 2.31 0 01-2.33 2H17"/></svg> Не нравится <span class="cnt">6</span></button>
+    </div>
+  </div>
+
+  <!-- CARD 7 -->
+  <div class="card">
+    <div class="card-header">
+      <div class="rank-badge rank-def">7</div>
+      <div class="card-name">Japan Life</div>
+      <div class="card-score"><div class="card-score-num">8.7</div><div class="card-score-label">баллов</div></div>
+    </div>
+    <div class="card-body">
+      <div class="card-desc">Japan Life начинала с авто из Японии, а сейчас активно работает и с китайским рынком. В каталоге на сайте можно найти как новые электромобили и гибриды, так и подержанные европейские и японские модели, которые продаются в Китае. Компания предлагает услугу Trade-In, то есть можно сдать текущий автомобиль в зачет нового. Офисы во Владивостоке (ул. Нижнепортовая, 1) и в Москве (ул. Мясницкая, 46с3). Для связи работает WhatsApp, Telegram и бесплатная линия по России.</div>
+      <div class="card-meta">
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Владивосток, Москва</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 30-45 дней</span>
+        <span class="meta-pill">Trade-In доступен</span>
+      </div>
+      <div class="card-pc">
+        <div class="pc-col pros">
+          <h4>Плюсы</h4>
+          <div class="pc-item">Услуга Trade-In и авторазбор</div>
+          <div class="pc-item">Офисы в двух крупных городах</div>
+          <div class="pc-item">Работа с физлицами и юрлицами</div>
+        </div>
+        <div class="pc-col cons">
+          <h4>Минусы</h4>
+          <div class="pc-item">Меньше отзывов на Яндекс Картах, чем у лидеров</div>
+          <div class="pc-item">Не самый современный сайт</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-contacts">
+      <a href="https://jplife.ru/china/" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg> jplife.ru</a>
+      <a href="tel:88007001894" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 8 (800) 700-18-94</a>
+      <a href="https://vk.com/japanlife" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.587-1.496c.598-.189 1.366 1.26 2.18 1.816.616.42 1.084.328 1.084.328l2.178-.03s1.14-.07.6-.964c-.045-.073-.32-.661-1.644-1.868-1.386-1.262-1.2-1.059.469-3.244.852-1.119 1.192-1.803 1.086-2.096-.101-.278-.726-.205-.726-.205l-2.45.015s-.182-.025-.317.056c-.131.079-.216.263-.216.263s-.388 1.032-.905 1.91c-1.092 1.855-1.529 1.952-1.708 1.837-.416-.267-.312-1.075-.312-1.649 0-1.793.272-2.541-.529-2.735-.266-.064-.462-.107-1.142-.114-.872-.009-1.61.003-2.028.208-.278.136-.493.44-.362.457.162.022.529.099.723.364.251.342.242 1.11.242 1.11s.144 2.11-.337 2.372c-.33.18-.783-.187-1.755-1.866-.498-.859-.874-1.81-.874-1.81s-.072-.177-.201-.272c-.157-.115-.376-.151-.376-.151l-2.328.015s-.35.01-.478.161c-.114.135-.009.413-.009.413s1.82 4.258 3.882 6.403c1.889 1.966 4.033 1.838 4.033 1.838h.972z"/></svg> VK</a>
+      <a href="https://t.me/jpliferu" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg> Telegram</a>
+      <a href="mailto:sales@japanlife.ru" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> sales@japanlife.ru</a>
+    </div>
+    <div class="card-actions">
+      <button class="vote-btn like-btn" onclick="vote(this,'like')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/><path d="M7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/></svg> Нравится <span class="cnt">39</span></button>
+      <button class="vote-btn dislike-btn" onclick="vote(this,'dislike')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 15V19a3 3 0 003 3l4-9V2H5.72a2 2 0 00-2 1.7l-1.38 9a2 2 0 002 2.3H10z"/><path d="M17 2h2.67A2.31 2.31 0 0122 4v7a2.31 2.31 0 01-2.33 2H17"/></svg> Не нравится <span class="cnt">4</span></button>
+    </div>
+  </div>
+
+  <!-- CARD 8 -->
+  <div class="card">
+    <div class="card-header">
+      <div class="rank-badge rank-def">8</div>
+      <div class="card-name">Автоподбор No1</div>
+      <div class="card-score"><div class="card-score-num">8.5</div><div class="card-score-label">баллов</div></div>
+    </div>
+    <div class="card-body">
+      <div class="card-desc">Компанию основал автоэксперт Евгений Шмелев, который ведет активный YouTube-канал и Telegram. Автоподбор No1 работает с 2017 года, специализируется на экспертном подборе автомобилей в России, а также на импорте из Китая и Кореи. Представители есть в Китае и Корее. Офис расположен в Москве (Полесский проезд, 16с1, оф. 203а). Подход отличается от большинства конкурентов: каждый автомобиль проходит личную проверку экспертом, составляется детальный фотоотчет с указанием всех дефектов. Помощь с таможенным оформлением и документами включена.</div>
+      <div class="card-meta">
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Москва</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> от 30 дней</span>
+        <span class="meta-pill">С 2017 г.</span>
+      </div>
+      <div class="card-pc">
+        <div class="pc-col pros">
+          <h4>Плюсы</h4>
+          <div class="pc-item">Личный бренд основателя, публичная репутация</div>
+          <div class="pc-item">Экспертная проверка каждого авто</div>
+          <div class="pc-item">Активный YouTube и Telegram</div>
+        </div>
+        <div class="pc-col cons">
+          <h4>Минусы</h4>
+          <div class="pc-item">Один офис только в Москве</div>
+          <div class="pc-item">Небольшая команда, ограниченная пропускная способность</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-contacts">
+      <a href="https://avtopodbormoskva.ru/" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg> avtopodbormoskva.ru</a>
+      <a href="tel:+74993255223" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 8 (499) 325-52-23</a>
+      <a href="https://vk.com/avtopodbor_moskva1" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.587-1.496c.598-.189 1.366 1.26 2.18 1.816.616.42 1.084.328 1.084.328l2.178-.03s1.14-.07.6-.964c-.045-.073-.32-.661-1.644-1.868-1.386-1.262-1.2-1.059.469-3.244.852-1.119 1.192-1.803 1.086-2.096-.101-.278-.726-.205-.726-.205l-2.45.015s-.182-.025-.317.056c-.131.079-.216.263-.216.263s-.388 1.032-.905 1.91c-1.092 1.855-1.529 1.952-1.708 1.837-.416-.267-.312-1.075-.312-1.649 0-1.793.272-2.541-.529-2.735-.266-.064-.462-.107-1.142-.114-.872-.009-1.61.003-2.028.208-.278.136-.493.44-.362.457.162.022.529.099.723.364.251.342.242 1.11.242 1.11s.144 2.11-.337 2.372c-.33.18-.783-.187-1.755-1.866-.498-.859-.874-1.81-.874-1.81s-.072-.177-.201-.272c-.157-.115-.376-.151-.376-.151l-2.328.015s-.35.01-.478.161c-.114.135-.009.413-.009.413s1.82 4.258 3.882 6.403c1.889 1.966 4.033 1.838 4.033 1.838h.972z"/></svg> VK</a>
+      <a href="https://t.me/avtopodbormoscva" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg> Telegram</a>
+      <a href="mailto:zakaz@avtopodbormoskva.ru" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> zakaz@avtopodbormoskva.ru</a>
+    </div>
+    <div class="card-actions">
+      <button class="vote-btn like-btn" onclick="vote(this,'like')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/><path d="M7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/></svg> Нравится <span class="cnt">34</span></button>
+      <button class="vote-btn dislike-btn" onclick="vote(this,'dislike')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 15V19a3 3 0 003 3l4-9V2H5.72a2 2 0 00-2 1.7l-1.38 9a2 2 0 002 2.3H10z"/><path d="M17 2h2.67A2.31 2.31 0 0122 4v7a2.31 2.31 0 01-2.33 2H17"/></svg> Не нравится <span class="cnt">2</span></button>
+    </div>
+  </div>
+
+  <!-- CARD 9 -->
+  <div class="card">
+    <div class="card-header">
+      <div class="rank-badge rank-def">9</div>
+      <div class="card-name">Антарес Авто</div>
+      <div class="card-score"><div class="card-score-num">8.4</div><div class="card-score-label">баллов</div></div>
+    </div>
+    <div class="card-body">
+      <div class="card-desc">Антарес Авто зарегистрирована во Владивостоке с 2013 года (по данным Rusprofile), но на сайте указано, что компания работает с 2008 года. Основатель ведет публичный блог, где показывает процесс покупки и доставки. Офис на ул. Адмирала Юмашева, 35, оф. 11. Компания импортирует из Японии, Кореи и Китая. Рейтинг 5.0 на Яндекс Картах (256 оценок) и 4.9 на 2ГИС (174 отзыва). В Telegram-канале выкладываются примеры последних покупок с полной детализацией расходов. Обещают экономию до 30% от рыночной цены в России.</div>
+      <div class="card-meta">
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Владивосток</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 30-45 дней</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01z"/></svg> 5.0 Яндекс (256 оценок)</span>
+        <span class="meta-pill">С 2008 г.</span>
+      </div>
+      <div class="card-pc">
+        <div class="pc-col pros">
+          <h4>Плюсы</h4>
+          <div class="pc-item">Публичный блог основателя</div>
+          <div class="pc-item">Экономия до 30% от рынка</div>
+          <div class="pc-item">Высокие оценки на двух площадках</div>
+        </div>
+        <div class="pc-col cons">
+          <h4>Минусы</h4>
+          <div class="pc-item">Нет офиса в Москве, только Владивосток</div>
+          <div class="pc-item">Расхождение в датах основания на сайте и в реестре</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-contacts">
+      <a href="https://antaresjp.ru/china/" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg> antaresjp.ru</a>
+      <a href="tel:88005502191" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 8 (800) 550-21-91</a>
+      <a href="https://vk.com/antaresauto" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.587-1.496c.598-.189 1.366 1.26 2.18 1.816.616.42 1.084.328 1.084.328l2.178-.03s1.14-.07.6-.964c-.045-.073-.32-.661-1.644-1.868-1.386-1.262-1.2-1.059.469-3.244.852-1.119 1.192-1.803 1.086-2.096-.101-.278-.726-.205-.726-.205l-2.45.015s-.182-.025-.317.056c-.131.079-.216.263-.216.263s-.388 1.032-.905 1.91c-1.092 1.855-1.529 1.952-1.708 1.837-.416-.267-.312-1.075-.312-1.649 0-1.793.272-2.541-.529-2.735-.266-.064-.462-.107-1.142-.114-.872-.009-1.61.003-2.028.208-.278.136-.493.44-.362.457.162.022.529.099.723.364.251.342.242 1.11.242 1.11s.144 2.11-.337 2.372c-.33.18-.783-.187-1.755-1.866-.498-.859-.874-1.81-.874-1.81s-.072-.177-.201-.272c-.157-.115-.376-.151-.376-.151l-2.328.015s-.35.01-.478.161c-.114.135-.009.413-.009.413s1.82 4.258 3.882 6.403c1.889 1.966 4.033 1.838 4.033 1.838h.972z"/></svg> VK</a>
+      <a href="https://t.me/antaresavto" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg> Telegram</a>
+      <a href="https://www.instagram.com/antaresauto/" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg> Instagram</a>
+      <a href="mailto:info@antaresjp.ru" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> info@antaresjp.ru</a>
+    </div>
+    <div class="card-actions">
+      <button class="vote-btn like-btn" onclick="vote(this,'like')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/><path d="M7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/></svg> Нравится <span class="cnt">31</span></button>
+      <button class="vote-btn dislike-btn" onclick="vote(this,'dislike')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 15V19a3 3 0 003 3l4-9V2H5.72a2 2 0 00-2 1.7l-1.38 9a2 2 0 002 2.3H10z"/><path d="M17 2h2.67A2.31 2.31 0 0122 4v7a2.31 2.31 0 01-2.33 2H17"/></svg> Не нравится <span class="cnt">3</span></button>
+    </div>
+  </div>
+
+  <!-- CARD 10 -->
+  <div class="card">
+    <div class="card-header">
+      <div class="rank-badge rank-def">10</div>
+      <div class="card-name">Delivery Car</div>
+      <div class="card-score"><div class="card-score-num">8.2</div><div class="card-score-label">баллов</div></div>
+    </div>
+    <div class="card-body">
+      <div class="card-desc">Delivery Car позиционирует себя как прямой поставщик без посредников. Компания работает более 5 лет, привозит машины из Китая, Японии и Южной Кореи. Офис во Владивостоке (ул. Всеволода Сибирцева, 15, оф. 510). Срок доставки из Китая заявлен до 4 недель, что быстрее среднерыночного. Рейтинг 4.9 на Яндекс Картах (71 оценка, 61 отзыв). Компания берет на себя полное оформление документов и выдачу ЭПТС. На страницах в VK и Telegram публикуются фото и видео с каждого этапа сделки.</div>
+      <div class="card-meta">
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Владивосток</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> до 4 недель</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01z"/></svg> 4.9 Яндекс (71 оценка)</span>
+      </div>
+      <div class="card-pc">
+        <div class="pc-col pros">
+          <h4>Плюсы</h4>
+          <div class="pc-item">Быстрая доставка (до 4 недель)</div>
+          <div class="pc-item">Прямой поставщик без посредников</div>
+          <div class="pc-item">Фото/видео на каждом этапе</div>
+        </div>
+        <div class="pc-col cons">
+          <h4>Минусы</h4>
+          <div class="pc-item">Нет офиса за пределами Владивостока</div>
+          <div class="pc-item">Меньше отзывов по сравнению с конкурентами</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-contacts">
+      <a href="https://vk.com/deliverycarvl" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg> Сайт компании</a>
+      <a href="tel:88006004624" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 8 (800) 600-46-24</a>
+      <a href="https://vk.com/deliverycarvl" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.587-1.496c.598-.189 1.366 1.26 2.18 1.816.616.42 1.084.328 1.084.328l2.178-.03s1.14-.07.6-.964c-.045-.073-.32-.661-1.644-1.868-1.386-1.262-1.2-1.059.469-3.244.852-1.119 1.192-1.803 1.086-2.096-.101-.278-.726-.205-.726-.205l-2.45.015s-.182-.025-.317.056c-.131.079-.216.263-.216.263s-.388 1.032-.905 1.91c-1.092 1.855-1.529 1.952-1.708 1.837-.416-.267-.312-1.075-.312-1.649 0-1.793.272-2.541-.529-2.735-.266-.064-.462-.107-1.142-.114-.872-.009-1.61.003-2.028.208-.278.136-.493.44-.362.457.162.022.529.099.723.364.251.342.242 1.11.242 1.11s.144 2.11-.337 2.372c-.33.18-.783-.187-1.755-1.866-.498-.859-.874-1.81-.874-1.81s-.072-.177-.201-.272c-.157-.115-.376-.151-.376-.151l-2.328.015s-.35.01-.478.161c-.114.135-.009.413-.009.413s1.82 4.258 3.882 6.403c1.889 1.966 4.033 1.838 4.033 1.838h.972z"/></svg> VK</a>
+      <a href="https://t.me/deliverycarvl" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg> Telegram</a>
+      <a href="https://www.instagram.com/deliverycar.ru/" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg> Instagram</a>
+    </div>
+    <div class="card-actions">
+      <button class="vote-btn like-btn" onclick="vote(this,'like')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/><path d="M7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/></svg> Нравится <span class="cnt">28</span></button>
+      <button class="vote-btn dislike-btn" onclick="vote(this,'dislike')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 15V19a3 3 0 003 3l4-9V2H5.72a2 2 0 00-2 1.7l-1.38 9a2 2 0 002 2.3H10z"/><path d="M17 2h2.67A2.31 2.31 0 0122 4v7a2.31 2.31 0 01-2.33 2H17"/></svg> Не нравится <span class="cnt">5</span></button>
+    </div>
+  </div>
+
+  <!-- CARD 11 -->
+  <div class="card">
+    <div class="card-header">
+      <div class="rank-badge rank-def">11</div>
+      <div class="card-name">Carwin</div>
+      <div class="card-score"><div class="card-score-num">8.0</div><div class="card-score-label">баллов</div></div>
+    </div>
+    <div class="card-body">
+      <div class="card-desc">Carwin работает в автомобильном бизнесе с 2008 года. Начинали с поставок машин с японских аукционов, а теперь охватывают Китай и Корею. Компания базируется во Владивостоке (ул. Калинина, 230), прием клиентов ведется по предварительной записи. На Яндекс Картах 96 отзывов, а в VK более 6 тысяч подписчиков. Главная особенность Carwin — прозрачность: на сайте опубликована подробная инструкция по покупке подержанного автомобиля из Китая с разбивкой всех расходов до рубля. Компания также помогает организовать визит клиента во Владивосток для личного осмотра машины.</div>
+      <div class="card-meta">
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Владивосток</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 30-45 дней</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01z"/></svg> 96 отзывов Яндекс</span>
+        <span class="meta-pill">С 2008 г.</span>
+      </div>
+      <div class="card-pc">
+        <div class="pc-col pros">
+          <h4>Плюсы</h4>
+          <div class="pc-item">Подробная инструкция с детализацией расходов на сайте</div>
+          <div class="pc-item">Более 16 лет на рынке</div>
+          <div class="pc-item">Возможность личного визита и осмотра авто</div>
+          <div class="pc-item">6 000+ подписчиков VK</div>
+        </div>
+        <div class="pc-col cons">
+          <h4>Минусы</h4>
+          <div class="pc-item">Прием только по записи, нет свободного посещения</div>
+          <div class="pc-item">Нет офиса в Москве или другом крупном городе</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-contacts">
+      <a href="https://www.carwin.ru/" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg> carwin.ru</a>
+      <a href="tel:+79146898390" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> +7 (914) 689-83-90</a>
+      <a href="https://vk.com/carwinru" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.587-1.496c.598-.189 1.366 1.26 2.18 1.816.616.42 1.084.328 1.084.328l2.178-.03s1.14-.07.6-.964c-.045-.073-.32-.661-1.644-1.868-1.386-1.262-1.2-1.059.469-3.244.852-1.119 1.192-1.803 1.086-2.096-.101-.278-.726-.205-.726-.205l-2.45.015s-.182-.025-.317.056c-.131.079-.216.263-.216.263s-.388 1.032-.905 1.91c-1.092 1.855-1.529 1.952-1.708 1.837-.416-.267-.312-1.075-.312-1.649 0-1.793.272-2.541-.529-2.735-.266-.064-.462-.107-1.142-.114-.872-.009-1.61.003-2.028.208-.278.136-.493.44-.362.457.162.022.529.099.723.364.251.342.242 1.11.242 1.11s.144 2.11-.337 2.372c-.33.18-.783-.187-1.755-1.866-.498-.859-.874-1.81-.874-1.81s-.072-.177-.201-.272c-.157-.115-.376-.151-.376-.151l-2.328.015s-.35.01-.478.161c-.114.135-.009.413-.009.413s1.82 4.258 3.882 6.403c1.889 1.966 4.033 1.838 4.033 1.838h.972z"/></svg> VK</a>
+      <a href="https://www.facebook.com/carwin.ru/" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook</a>
+    </div>
+    <div class="card-actions">
+      <button class="vote-btn like-btn" onclick="vote(this,'like')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/><path d="M7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/></svg> Нравится <span class="cnt">24</span></button>
+      <button class="vote-btn dislike-btn" onclick="vote(this,'dislike')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 15V19a3 3 0 003 3l4-9V2H5.72a2 2 0 00-2 1.7l-1.38 9a2 2 0 002 2.3H10z"/><path d="M17 2h2.67A2.31 2.31 0 0122 4v7a2.31 2.31 0 01-2.33 2H17"/></svg> Не нравится <span class="cnt">3</span></button>
+    </div>
+  </div>
+
+  <!-- CARD 12 -->
+  <div class="card">
+    <div class="card-header">
+      <div class="rank-badge rank-def">12</div>
+      <div class="card-name">Priority Auto</div>
+      <div class="card-score"><div class="card-score-num">7.9</div><div class="card-score-label">баллов</div></div>
+    </div>
+    <div class="card-body">
+      <div class="card-desc">Priority Auto заявляет, что поможет сэкономить от 20 до 40 процентов по сравнению с покупкой у официальных дилеров в России. Офисы расположены во Владивостоке (ул. Пушкинская, 40, оф. 709) и в Москве (Золоторожский Вал, 11, стр. 26, оф. А7/03). Рейтинг 5.0 на Яндекс Картах с 327 оценками во Владивостоке и 88 оценками в Москве. Компания ведет подробный блог на сайте, где разбирает реальные кейсы с полной калькуляцией. Также есть активный YouTube-канал с видеообзорами. Привозят из Японии, Кореи и Китая, сроки доставки заявлены от 20 дней.</div>
+      <div class="card-meta">
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Владивосток, Москва</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> от 20 дней</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01z"/></svg> 5.0 Яндекс (327 оценок)</span>
+      </div>
+      <div class="card-pc">
+        <div class="pc-col pros">
+          <h4>Плюсы</h4>
+          <div class="pc-item">Экономия 20-40% от дилерских цен</div>
+          <div class="pc-item">Офисы во Владивостоке и Москве</div>
+          <div class="pc-item">Блог с реальными кейсами и YouTube-канал</div>
+          <div class="pc-item">Быстрая доставка от 20 дней</div>
+        </div>
+        <div class="pc-col cons">
+          <h4>Минусы</h4>
+          <div class="pc-item">Нет точных данных о годе основания</div>
+          <div class="pc-item">Премиум-позиционирование может означать более высокую комиссию</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-contacts">
+      <a href="https://priority-auto.ru/" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg> priority-auto.ru</a>
+      <a href="tel:88004440453" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 8 (800) 444-04-53</a>
+      <a href="https://vk.com/priority_auto" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.587-1.496c.598-.189 1.366 1.26 2.18 1.816.616.42 1.084.328 1.084.328l2.178-.03s1.14-.07.6-.964c-.045-.073-.32-.661-1.644-1.868-1.386-1.262-1.2-1.059.469-3.244.852-1.119 1.192-1.803 1.086-2.096-.101-.278-.726-.205-.726-.205l-2.45.015s-.182-.025-.317.056c-.131.079-.216.263-.216.263s-.388 1.032-.905 1.91c-1.092 1.855-1.529 1.952-1.708 1.837-.416-.267-.312-1.075-.312-1.649 0-1.793.272-2.541-.529-2.735-.266-.064-.462-.107-1.142-.114-.872-.009-1.61.003-2.028.208-.278.136-.493.44-.362.457.162.022.529.099.723.364.251.342.242 1.11.242 1.11s.144 2.11-.337 2.372c-.33.18-.783-.187-1.755-1.866-.498-.859-.874-1.81-.874-1.81s-.072-.177-.201-.272c-.157-.115-.376-.151-.376-.151l-2.328.015s-.35.01-.478.161c-.114.135-.009.413-.009.413s1.82 4.258 3.882 6.403c1.889 1.966 4.033 1.838 4.033 1.838h.972z"/></svg> VK</a>
+      <a href="https://t.me/priorityauto_vl" target="_blank" class="contact-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg> Telegram</a>
+      <a href="mailto:zakaz@priority-auto.com" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> zakaz@priority-auto.com</a>
+    </div>
+    <div class="card-actions">
+      <button class="vote-btn like-btn" onclick="vote(this,'like')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/><path d="M7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/></svg> Нравится <span class="cnt">22</span></button>
+      <button class="vote-btn dislike-btn" onclick="vote(this,'dislike')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 15V19a3 3 0 003 3l4-9V2H5.72a2 2 0 00-2 1.7l-1.38 9a2 2 0 002 2.3H10z"/><path d="M17 2h2.67A2.31 2.31 0 0122 4v7a2.31 2.31 0 01-2.33 2H17"/></svg> Не нравится <span class="cnt">6</span></button>
+    </div>
+  </div>
+
 </section>
 
 <!-- COMPARE TABLE -->
 <section class="section" id="compare">
-    <div class="container">
-        <h2 class="section-title">Сравнительная таблица компаний</h2>
-        <p class="section-sub">Ключевые параметры всех 12 фирм из рейтинга в одном месте</p>
-        <div class="table-wrap">
-            <table>
-                <thead>
-                    <tr><th>#</th><th>Компания</th><th>Год основания</th><th>Офис</th><th>Сроки</th><th>Яндекс</th><th>2ГИС</th><th>Электромобили</th><th>Б/у авто</th></tr>
-                </thead>
-                <tbody>
-                    <tr style="background:rgba(217,119,6,.04)"><td>1</td><td><strong>SferaCar</strong></td><td>—</td><td>Владивосток, Москва</td><td>30-50 д.</td><td>5.0 (400+)</td><td>4.9 (630+)</td><td>✅</td><td>✅</td></tr>
-                    <tr style="background:rgba(107,114,128,.04)"><td>2</td><td><strong>Япония Транзит</strong></td><td>—</td><td>Москва</td><td>35-50 д.</td><td>5.0 (500+)</td><td>—</td><td>✅</td><td>✅</td></tr>
-                    <tr style="background:rgba(180,83,9,.04)"><td>3</td><td><strong>Central Trans</strong></td><td>2015</td><td>Екатеринбург</td><td>Инд.</td><td>4.9 (60+)</td><td>50+</td><td>✅</td><td>✅</td></tr>
-                    <tr><td>4</td><td><strong>DSS Group</strong></td><td>2018</td><td>СПб + 38 городов</td><td>30-50 д.</td><td>4.8</td><td>4.8</td><td>✅</td><td>✅</td></tr>
-                    <tr><td>5</td><td><strong>Autosender</strong></td><td>2018</td><td>Владивосток</td><td>30-50 д.</td><td>5.0 (200+)</td><td>—</td><td>✅</td><td>✅</td></tr>
-                    <tr><td>6</td><td><strong>Чайна Трейд</strong></td><td>2005</td><td>Москва, Владивосток</td><td>30-50 д.</td><td>—</td><td>—</td><td>✅</td><td>—</td></tr>
-                    <tr><td>7</td><td><strong>Japan Life</strong></td><td>2015+</td><td>Москва, Владивосток</td><td>30-50 д.</td><td>4.8 (290)</td><td>4.8</td><td>✅</td><td>✅</td></tr>
-                    <tr><td>8</td><td><strong>Автоподбор No1</strong></td><td>2017</td><td>Москва</td><td>от 30 д.</td><td>—</td><td>—</td><td>✅</td><td>—</td></tr>
-                    <tr><td>9</td><td><strong>Антарес Авто</strong></td><td>2013</td><td>Владивосток</td><td>30-50 д.</td><td>5.0 (250+)</td><td>4.9 (174)</td><td>✅</td><td>✅</td></tr>
-                    <tr><td>10</td><td><strong>Delivery Car</strong></td><td>—</td><td>Владивосток</td><td>30-50 д.</td><td>4.9 (70+)</td><td>—</td><td>✅</td><td>✅</td></tr>
-                    <tr><td>11</td><td><strong>Carwin</strong></td><td>—</td><td>Доставка по РФ</td><td>30-45 д.</td><td>—</td><td>—</td><td>✅</td><td>—</td></tr>
-                    <tr><td>12</td><td><strong>Priority Auto</strong></td><td>—</td><td>Владивосток, Москва</td><td>от 20 д.</td><td>5.0 (327)</td><td>—</td><td>✅</td><td>✅</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+  <div class="section-tag">Сравнение</div>
+  <h2 class="section-title">Сводная таблица <span>всех 12 компаний</span></h2>
+  <p class="section-desc">Быстрое сравнение по ключевым параметрам: год основания, офис, сроки, рейтинг и поддержка электромобилей.</p>
+  <div class="table-wrap">
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Компания</th>
+          <th>Год</th>
+          <th>Офис в РФ</th>
+          <th>Срок</th>
+          <th>Яндекс</th>
+          <th>Электро</th>
+          <th>Б/у</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>SferaCar</td><td>2014</td><td>Владивосток, Москва</td><td>30-50 дн.</td><td>5.0 (421)</td><td>Да</td><td>Да</td></tr>
+        <tr><td>2</td><td>Япония Транзит</td><td>2017</td><td>Владивосток, Москва</td><td>35-50 дн.</td><td>5.0 (524)</td><td>Да</td><td>Да</td></tr>
+        <tr><td>3</td><td>Central Trans</td><td>2010</td><td>Екатеринбург</td><td>Индив.</td><td>4.9 (62)</td><td>Да</td><td>Нет</td></tr>
+        <tr><td>4</td><td>DSS Group</td><td>2018</td><td>СПб, 38 городов</td><td>30-50 дн.</td><td>4.7</td><td>Да</td><td>Да</td></tr>
+        <tr><td>5</td><td>Autosender</td><td>2011</td><td>Владивосток, МО</td><td>30-50 дн.</td><td>5.0 (212)</td><td>Да</td><td>Да</td></tr>
+        <tr><td>6</td><td>Чайна Трейд</td><td>2005</td><td>Москва, Владивосток</td><td>35-50 дн.</td><td>—</td><td>Да</td><td>Да</td></tr>
+        <tr><td>7</td><td>Japan Life</td><td>—</td><td>Владивосток, Москва</td><td>30-45 дн.</td><td>—</td><td>Да</td><td>Да</td></tr>
+        <tr><td>8</td><td>Автоподбор No1</td><td>2017</td><td>Москва</td><td>от 30 дн.</td><td>—</td><td>Да</td><td>Да</td></tr>
+        <tr><td>9</td><td>Антарес Авто</td><td>2013</td><td>Владивосток</td><td>30-45 дн.</td><td>5.0 (256)</td><td>Да</td><td>Да</td></tr>
+        <tr><td>10</td><td>Delivery Car</td><td>~2020</td><td>Владивосток</td><td>до 28 дн.</td><td>4.9 (71)</td><td>Да</td><td>Да</td></tr>
+        <tr><td>11</td><td>Carwin</td><td>2008</td><td>Владивосток</td><td>30-45 дн.</td><td>96 отз.</td><td>Да</td><td>Да</td></tr>
+        <tr><td>12</td><td>Priority Auto</td><td>—</td><td>Владивосток, Москва</td><td>от 20 дн.</td><td>5.0 (327)</td><td>Да</td><td>Да</td></tr>
+      </tbody>
+    </table>
+  </div>
 </section>
 
 <!-- HOW TO CHOOSE -->
-<section class="section" id="howto" style="background:var(--bg3)">
-    <div class="article">
-        <h2 class="section-title">Как выбрать компанию по привозу авто из Китая</h2>
-        <p class="section-sub">Критерии, на которые стоит обращать внимание перед заключением договора</p>
+<section class="section" id="howto">
+  <div class="section-tag">Советы</div>
+  <h2 class="section-title">Как выбрать <span>надежную компанию</span></h2>
+  <p class="section-desc">Рекомендации, основанные на моем личном опыте и анализе десятков сделок.</p>
+  <p style="font-size:15px;color:var(--muted);max-width:800px;line-height:1.8;margin-bottom:20px">Первое, на что я обращаю внимание, это возраст компании и количество реальных отзывов на независимых площадках вроде Яндекс Карт и 2ГИС. Если фирма существует менее года и отзывов меньше десятка, это серьезный повод задуматься. Второй критерий — наличие физического офиса, куда можно приехать лично. Компании-однодневки обычно работают только через мессенджеры и не готовы встретиться лично.</p>
+  <p style="font-size:15px;color:var(--muted);max-width:800px;line-height:1.8;margin-bottom:20px">Обязательно требуйте полный расчет стоимости «под ключ» до подписания договора. В итоговую сумму должны входить: цена автомобиля в Китае, комиссия компании, логистика до границы РФ, таможенная пошлина, акциз, НДС, утилизационный сбор, получение СБКТС и ЭПТС, а также доставка до вашего города. Если компания не может дать прозрачную калькуляцию, лучше поискать другого партнера.</p>
+  <p style="font-size:15px;color:var(--muted);max-width:800px;line-height:1.8;margin-bottom:20px">Третий момент — оплата. Переводите деньги только на расчетный счет юридического лица. Проверьте ИНН и ОГРН через сервис Rusprofile или ФНС. Если вас просят перевести на карту физического лица, это красный флаг. И наконец, убедитесь, что в договоре прописана материальная ответственность за повреждение авто при транспортировке и страхование груза.</p>
 
-        <h2>Проверяйте юрлицо через реестры</h2>
-        <p>Узнайте ИНН, дату регистрации, адрес, информацию о директоре. Если фирма зарегистрирована пару месяцев назад, а обещает "десятилетний опыт", это повод для сомнений. Проверка занимает 2 минуты через сервисы вроде Rusprofile.</p>
+  <div style="background:linear-gradient(135deg,rgba(245,87,108,.06),rgba(240,147,251,.06));border:1px solid rgba(245,87,108,.15);border-radius:var(--radius-sm);padding:24px;margin-top:24px;max-width:800px">
+    <p style="font-weight:700;color:#f5576c;margin-bottom:8px">На что обратить внимание</p>
+    <p style="font-size:14px;color:var(--muted);line-height:1.7">Компания без истории и без офиса; просьба платить на карту физлица; отсутствие договора с детализацией расходов; нереалистично низкая цена «под ключ» без расшифровки; отказ предоставить ИНН и реквизиты.</p>
+  </div>
+</section>
 
-        <h2>Требуйте полный расчет "под ключ"</h2>
-        <p>Надежный поставщик до подписания договора предоставляет детализированный расчет: цена авто, комиссия, логистика, морской фрахт, таможенная пошлина, акциз, утилизационный сбор, СБКТС, ЭПТС, доставка по России. Если вам называют только стоимость машины в Китае, ждите неприятных сюрпризов.</p>
-
-        <div class="article-warn">
-            <strong>Красный флаг:</strong> Оплата на личную карту физического лица. Деньги должны идти только на расчетный счет юрлица или ИП, с которым подписан договор. Это ваша юридическая защита.
-        </div>
-
-        <h2>Изучайте отзывы на независимых площадках</h2>
-        <p>Яндекс Карты, 2ГИС, Drive2, тематические форумы и телеграм-чаты. Обращайте внимание не только на количество, но и на то, как компания реагирует на негатив.</p>
-    </div>
+<!-- COST -->
+<section class="section" id="cost">
+  <div class="section-tag">Калькуляция</div>
+  <h2 class="section-title">Сколько стоит <span>привезти авто из Китая</span></h2>
+  <p class="section-desc">Примерный расчет для автомобиля стоимостью 6 000 000 рублей в Китае.</p>
+  <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:32px;max-width:600px">
+    <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border)"><span style="color:var(--muted);font-size:14px">Цена автомобиля в Китае</span><span style="font-weight:700;font-size:14px">6 000 000 ₽</span></div>
+    <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border)"><span style="color:var(--muted);font-size:14px">Комиссия компании</span><span style="font-weight:700;font-size:14px">150 000 - 250 000 ₽</span></div>
+    <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border)"><span style="color:var(--muted);font-size:14px">Логистика до границы РФ</span><span style="font-weight:700;font-size:14px">~600 000 ₽</span></div>
+    <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border)"><span style="color:var(--muted);font-size:14px">Таможенная пошлина + акциз + НДС</span><span style="font-weight:700;font-size:14px">~3 700 000 ₽</span></div>
+    <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border)"><span style="color:var(--muted);font-size:14px">Утилизационный сбор, СБКТС, ЭПТС, ГЛОНАСС</span><span style="font-weight:700;font-size:14px">~300 000 ₽</span></div>
+    <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border)"><span style="color:var(--muted);font-size:14px">Доставка по России (до Москвы)</span><span style="font-weight:700;font-size:14px">~100 000 ₽</span></div>
+    <div style="display:flex;justify-content:space-between;padding:14px 0;margin-top:4px"><span style="font-weight:800;font-size:15px;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Итого «под ключ»</span><span style="font-weight:800;font-size:18px;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent">~11 000 000 ₽</span></div>
+  </div>
+  <p style="font-size:13px;color:var(--muted);margin-top:16px;max-width:600px">Расчет ориентировочный и зависит от модели, объема двигателя, возраста автомобиля и курса валют. Для точного расчета обращайтесь в выбранную компанию.</p>
 </section>
 
 <!-- FAQ -->
 <section class="section" id="faq">
-    <div class="container">
-        <h2 class="section-title">Часто задаваемые вопросы</h2>
-        <p class="section-sub">Отвечаем на то, что реально спрашивают</p>
-        <div class="faq-list">
-            <div class="faq-item">
-                <div class="faq-q">Сколько стоит привезти автомобиль из Китая?</div>
-                <div class="faq-a">Итоговая стоимость "под ключ" складывается из цены авто, комиссии посредника (150-250 тыс. руб.), морского фрахта, таможенной пошлины (48-54% для физлиц), акциза, утилизационного сбора, СБКТС и ЭПТС, доставки по России. Автомобиль за 6 млн руб. в Китае в итоге обходится в 11+ млн руб.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-q">Сколько дней занимает доставка?</div>
-                <div class="faq-a">В среднем от подписания договора до получения авто с документами проходит 6-10 недель. Морской транзит до Владивостока занимает 2-4 недели, растаможка 3-10 рабочих дней, доставка автовозом по России 10-14 дней.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-q">Какие автомобили чаще всего везут из Китая?</div>
-                <div class="faq-a">Лидеры спроса: Li Auto (L7, L8, L9), Zeekr (001, 007, X), BYD (Seal, Song Plus, Han), Geely Monjaro, Haval Jolion и H6, Changan CS75 Plus, Tank 300 и 500, модели Exeed и Jetour. Также популярны б/у Toyota и VW китайской сборки.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-q">Можно ли привезти б/у автомобиль из Китая?</div>
-                <div class="faq-a">Да. Из КНР везут подержанные Toyota RAV4, Corolla, Highlander китайской сборки, а также Volkswagen, Audi и BMW с китайских заводов. Некоторые компании из рейтинга специализируются на б/у сегменте.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-q">Как не нарваться на мошенников?</div>
-                <div class="faq-a">Проверяйте юрлицо через реестры, не переводите деньги на личные карты, требуйте полный расчет до договора, изучайте отзывы на Яндекс Картах и 2ГИС, убедитесь в наличии физического офиса, уточните страхование груза и материальную ответственность перевозчика.</div>
-            </div>
-        </div>
-    </div>
+  <div class="section-tag">Вопросы и ответы</div>
+  <h2 class="section-title">Частые вопросы о <span>привозе авто из Китая</span></h2>
+  <p class="section-desc">Ответы на вопросы, которые мне задают чаще всего.</p>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">Сколько времени занимает доставка автомобиля из Китая?<span class="arrow">▾</span></div>
+    <div class="faq-a">В среднем весь процесс занимает от 6 до 10 недель. Морская перевозка до Владивостока составляет 14-21 день, таможенное оформление 5-10 рабочих дней, получение СБКТС и ЭПТС еще 3-5 дней, а доставка автовозом до Москвы 10-14 дней. Некоторые компании предлагают ускоренные варианты от 20 дней, но это обычно касается автомобилей, которые уже находятся в транзите.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">Какие китайские автомобили выгоднее всего привозить?<span class="arrow">▾</span></div>
+    <div class="faq-a">Наибольшую экономию дают электромобили и гибриды, поскольку в Китае их выбор значительно шире, а цены ниже. Популярные модели: Li Auto L7, L8, L9, Zeekr 001 и 007, BYD Han, Tang и Song Plus, Avatr 11, Geely Monjaro, Tank 300 и 500. Из подержанных европейских и японских марок, продающихся в Китае, часто привозят Volkswagen Passat CC и Toyota RAV4.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">Можно ли привезти подержанный автомобиль из Китая?<span class="arrow">▾</span></div>
+    <div class="faq-a">Да, но нужно учитывать, что таможенные пошлины на подержанные автомобили старше 3 лет существенно выше. Кроме того, для б/у машин потребуется прохождение лаборатории СБКТС, установка ГЛОНАСС и оформление ЭПТС. Не все компании работают с подержанными авто из Китая, поэтому уточняйте этот момент заранее.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">Из чего складывается стоимость растаможки?<span class="arrow">▾</span></div>
+    <div class="faq-a">Основные составляющие: таможенная пошлина (зависит от стоимости и объема двигателя, для большинства легковых автомобилей физлиц это 48-54% от таможенной стоимости), акцизный сбор (зависит от мощности двигателя), НДС 20%, утилизационный сбор (от 3 400 до 5 200 рублей для физлиц в зависимости от возраста авто, значительно выше для юрлиц), а также расходы на СБКТС, ГЛОНАСС и получение электронного ПТС.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">Как не попасть на мошенников при заказе авто из Китая?<span class="arrow">▾</span></div>
+    <div class="faq-a">Проверяйте юридическое лицо через ФНС или Rusprofile. Платите только на расчетный счет организации. Требуйте договор с полной детализацией расходов и прописанной материальной ответственностью. Читайте отзывы на независимых площадках (Яндекс Карты, 2ГИС, Drive2, форумы). Убедитесь, что у компании есть реальный офис. Если цена значительно ниже рынка без объяснения причин, скорее всего, это ловушка.</div>
+  </div>
 </section>
 
 <!-- CTA -->
-<section class="cta-block">
-    <h2>Готовы выбрать компанию?</h2>
-    <p>Все 12 фирм из рейтинга прошли проверку. Сравните условия, изучите отзывы и сделайте осознанный выбор.</p>
-    <div style="display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap">
-        <a href="#rating" class="hero-cta">🏆 Вернуться к рейтингу</a>
-        <a href="#compare" class="hero-ghost">📊 Сравнить в таблице</a>
-    </div>
+<section class="section">
+  <div class="cta-block">
+    <h2>Нашли подходящую компанию?</h2>
+    <p>Вернитесь к рейтингу, сравните варианты и сделайте осознанный выбор. Ставьте лайки и дизлайки, чтобы помочь другим покупателям.</p>
+    <a href="#rating" class="btn-white">Вернуться к рейтингу ↑</a>
+  </div>
 </section>
 
+<!-- FOOTER -->
 <footer class="footer">
-    <p>© 2026 АвтоИзКитая — Независимый рейтинг компаний по привозу автомобилей из Китая в Россию</p>
-    <p style="margin-top:.4rem">Рейтинг обновляется ежемесячно. Последнее обновление: март 2026.</p>
-    <p style="margin-top:.4rem;font-size:.75rem;color:var(--text3)">Информация носит справочный характер. Перед заключением договора проверяйте актуальные условия на сайтах компаний.</p>
+  <p>&copy; 2026 АвтоРейтинг. Информация носит справочный характер и не является рекламой. Данные актуальны на март 2026 года. Автор не несет ответственности за действия третьих лиц.</p>
 </footer>
 
-<!-- STICKY BAR -->
-<div class="sticky-bar" id="stickyBar">
-    <div class="sb-text">🏆 <strong>SferaCar</strong> — выбор редакции &nbsp;·&nbsp; 630+ отзывов, калькулятор на сайте</div>
-    <a href="#rating" class="sb-btn">К рейтингу →</a>
-    <button class="sb-close" onclick="document.getElementById('stickyBar').style.display='none'" aria-label="Закрыть">✕</button>
-</div>
-
 <script>
-function showRec(type, btn) {
-    document.querySelectorAll('.rec-result').forEach(el => el.classList.remove('show'));
-    document.querySelectorAll('.rec-btn').forEach(el => el.classList.remove('active'));
-    const el = document.getElementById('rec-' + type);
-    if (el) el.classList.add('show');
-    if (btn) btn.classList.add('active');
+// VOTE
+function vote(btn, type) {
+  const actions = btn.closest('.card-actions');
+  const likeBtn = actions.querySelector('.like-btn');
+  const dislikeBtn = actions.querySelector('.dislike-btn');
+
+  if (type === 'like') {
+    if (likeBtn.classList.contains('liked')) {
+      likeBtn.classList.remove('liked');
+      updateCount(likeBtn, -1);
+      return;
+    }
+    if (dislikeBtn.classList.contains('disliked')) {
+      dislikeBtn.classList.remove('disliked');
+      updateCount(dislikeBtn, -1);
+    }
+    likeBtn.classList.add('liked');
+    updateCount(likeBtn, 1);
+  } else {
+    if (dislikeBtn.classList.contains('disliked')) {
+      dislikeBtn.classList.remove('disliked');
+      updateCount(dislikeBtn, -1);
+      return;
+    }
+    if (likeBtn.classList.contains('liked')) {
+      likeBtn.classList.remove('liked');
+      updateCount(likeBtn, -1);
+    }
+    dislikeBtn.classList.add('disliked');
+    updateCount(dislikeBtn, 1);
+  }
 }
 
-window.addEventListener('scroll', function() {
-    const bar = document.getElementById('stickyBar');
-    if (!bar) return;
-    bar.classList.toggle('visible', window.scrollY > 500);
-}, {passive: true});
+function updateCount(btn, delta) {
+  const span = btn.querySelector('.cnt');
+  span.textContent = parseInt(span.textContent) + delta;
+}
 
-document.querySelectorAll('.faq-q').forEach(q => {
-    q.addEventListener('click', () => {
-        const item = q.parentElement;
-        document.querySelectorAll('.faq-item').forEach(i => { if (i !== item) i.classList.remove('open') });
-        item.classList.toggle('open');
-    });
-});
-
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-        e.preventDefault();
-        const t = document.querySelector(a.getAttribute('href'));
-        if (t) t.scrollIntoView({behavior:'smooth', block:'start'});
-        const nl = document.querySelector('.nav-links');
-        if (nl) nl.classList.remove('open');
-    });
-});
-
-setInterval(() => {
-    const el = document.getElementById('live-count');
-    if (el) el.textContent = Math.floor(15 + Math.random() * 25);
-}, 9000);
+// FAQ
+function toggleFaq(el) {
+  const answer = el.nextElementSibling;
+  const isOpen = el.classList.contains('open');
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.classList.remove('open');
+    q.nextElementSibling.classList.remove('show');
+  });
+  if (!isOpen) {
+    el.classList.add('open');
+    answer.classList.add('show');
+  }
+}
 </script>
 
 </body>
 </html>
-
